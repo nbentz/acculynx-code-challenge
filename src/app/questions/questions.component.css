@@ -1,0 +1,15 @@
+mat-expansion-panel, mat-card-content {
+  margin-bottom: 0.1rem;
+}
+
+.answer {
+  transition: 0.3s;
+}
+.answer:hover {
+  background-color: rgba(200,200,200,.75);
+}
+
+.answer:active {
+  background-color: rgba(0,0,0, .45);
+  transition: 0.1s;
+}

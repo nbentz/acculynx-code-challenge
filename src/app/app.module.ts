@@ -7,6 +7,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule, MatExpansionModule } from '@angular/material/';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatCardModule } from '@angular/material/card';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
@@ -25,7 +26,8 @@ import { QuestionsComponent } from './questions/questions.component';
     MatFormFieldModule,
     MatExpansionModule,
     MatDividerModule,
-    MatCardModule
+    MatCardModule,
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]

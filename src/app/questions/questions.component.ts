@@ -15,7 +15,7 @@ export class QuestionsComponent implements OnInit {
 
   constructor( private questionsService: QuestionsService ) { }
 
-  //gets the most recent questions
+  // gets the most recent questions & answers
   onSubmitRecentQuestions() {
     this.questionsService.getQuestions().subscribe( data => {
       this.questions = data.items;
