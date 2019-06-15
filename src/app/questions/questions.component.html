@@ -1,3 +1,18 @@
-<p>
-  recent-questions works!
-</p>
+<mat-accordion *ngFor="let question of questions;  let lastItem = last">
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title >
+        <h3 innerHtml="{{question.title}}"></h3>
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <div innerHtml="{{question.body}}"></div>
+    <mat-divider *ngIf='!lastItem'></mat-divider>
+    <div *ngFor="let answer of question.answers; let lastAnswer = last">
+      <mat-card>
+        <mat-card-title>Answer:</mat-card-title>
+          <mat-card-content><div innerHtml="{{answer.body}}"></div></mat-card-content>
+      </mat-card>
+      <mat-divider *ngIf='!lastAnswer'></mat-divider>
+    </div>
+  </mat-expansion-panel>
+</mat-accordion>

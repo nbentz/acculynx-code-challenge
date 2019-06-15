@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+
 
 @Injectable({
   providedIn: 'root'
@@ -7,9 +8,11 @@ import { HttpClient } from '@angular/common/http';
 export class QuestionsService {
 
   constructor( private http: HttpClient) { }
-  private baseUrl = 'https://api.stackexchange.com/';
 
-  public getQuestions(page: string) {
-    return this.http.get<any>(`${this.baseUrl}/2.2/questions?page=${page}&pagesize=100&order=desc&sort=creation&site=stackoverflow`);
+  public getQuestions() {
+    return this.http.get<any>(
+      `https://api.stackexchange.com/2.2/search/advanced?pagesize=10&order=desc&sort=creation&accepted=True&answers=2&site=stackoverflow&filter=!)rh-4Rv3X0MXqJcCydZX`
+    );
   }
+
 }
