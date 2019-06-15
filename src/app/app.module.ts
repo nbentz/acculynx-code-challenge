@@ -12,6 +12,8 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { QuestionsComponent } from './questions/questions.component';
+import { QuestionsService } from './questions/questions.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +31,7 @@ import { QuestionsComponent } from './questions/questions.component';
     MatCardModule,
     MatTooltipModule
   ],
-  providers: [],
+  providers: [QuestionsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

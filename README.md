@@ -26,3 +26,37 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+#Installation instructions
+
+## Install NodeJS
+
+Install NodeJS from this download link: https://nodejs.org/en/download/
+
+## Install Angular
+
+After installing NodeJS, run this command:
+npm install -g @angular/cli
+
+## Install MongoDb
+MongoDb can be installed from this link: https://www.mongodb.com/download-center/community
+Setup a folder for your local mongodb data. I named mine mongo-data.
+Open up CMD line. Type in :
+  cd C:\Program Files\MongoDB\Server\4.0\bin
+
+Then enter the following cmd:
+  .\mongod --dbpath=<your-path>/mongo-data
+
+Do not close this cmd window, keep it open.
+
+## MongoDB driver for nodeJS
+Navigate to the parent folder of my project.
+run the following command:
+  npm install mongodb --save
+
+## Instal Robo 3T
+Download it from here: https://robomongo.org/download
+
+## Install additional NodeJS modules
+run the following commands:
+npm i mongoose
