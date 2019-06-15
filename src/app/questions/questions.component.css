@@ -4,6 +4,7 @@ mat-expansion-panel, mat-card-content {
 
 .answer {
   transition: 0.3s;
+  margin-bottom: 1em;
 }
 .answer:hover {
   background-color: rgba(200,200,200,.75);
