@@ -14,3 +14,11 @@ mat-expansion-panel, mat-card-content {
   background-color: rgba(0,0,0, .45);
   transition: 0.1s;
 }
+
+.correct {
+  border: solid green 1px;
+}
+
+.incorrect {
+  border: solid red 1px;
+}
