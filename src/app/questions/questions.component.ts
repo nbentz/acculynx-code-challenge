@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, OnDestroy } from '@angular/core';
 import { QuestionsService } from './questions.service';
 import { Subscription } from 'rxjs';
 
@@ -7,15 +7,15 @@ import { Subscription } from 'rxjs';
   templateUrl: './questions.component.html',
   styleUrls: ['./questions.component.css']
 })
-export class QuestionsComponent implements OnInit {
+export class QuestionsComponent implements OnInit, OnDestroy {
 
   @Input() type: string;
   @Input() title: string;
-  questions: any = {};
-  subscription: Subscription;
+  questions = [];
   guessedQuestions = [];
+  subscription: Subscription;
 
-  constructor( private questionsService: QuestionsService ) { }
+  constructor( public questionsService: QuestionsService ) { }
 
   // gets the most recent questions & answers
   onSubmitRecentQuestions() {
@@ -25,29 +25,29 @@ export class QuestionsComponent implements OnInit {
 
   // scores points, appends answer with timestamp and guesscount.
   scorePointsAndUpdate(question, answer) {
+    console.warn('scorePointsAndUpdate executed');
     this.questions = this.questionsService.getQuestions();
-    if (answer.is_accepted) {
-    // modal Thats correct, score, etc.
-    alert('Correct');
-    } else {
-      // modal incorrect, score, etc.
-      alert('incorrect');
-    }
-    if (!answer.guess_count) {
-      answer.guess_count = 1;
-    } else {
-      answer.guess_count += 1;
-    }
+    answer.is_accepted ? alert('Correct') : alert('Incorrect');
+    !answer.guess_count ? answer.guess_count = 1 : answer.guess_count += 1;
+
     console.log(answer.guess_count);
-    answer.timeStamp = new Date().getTime();
+
     const indexAnswer = question.answers.findIndex(x => x.answer_id === answer.answer_id);
     question.answers[indexAnswer] = answer;
+    question.timeStamp = new Date().getTime();
 
-    // this part may not be needed. Maybe for the frontend.
     const indexQuestion = this.questions.findIndex(x => x.question_id === question.question_id);
     this.questions[indexQuestion] = question;
-    console.log(this.questions);
-    this.questionsService.setQuestions(this.questions);
+
+    const indexGuessedQuestion = this.guessedQuestions.findIndex( x => x.question_id === question.question_id);
+    indexGuessedQuestion >= 0
+      ? this.guessedQuestions[indexGuessedQuestion] = question
+      : this.guessedQuestions = [...this.guessedQuestions, question];
+
+    console.log(this.guessedQuestions);
+    this.questionsService.setGuessedQuestions(this.guessedQuestions);
+    console.log(question);
+    this.questionsService.updateQuestion(question);
 
   }
 

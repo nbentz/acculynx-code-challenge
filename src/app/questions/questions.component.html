@@ -1,5 +1,5 @@
-<mat-accordion >
-  <mat-expansion-panel *ngFor="let question of questions;  let lastItem = last">
+<mat-accordion *ngIf="questionsService.questions && this.type==='normal'">
+  <mat-expansion-panel *ngFor="let question of questionsService.questions;  let lastItem = last">
     <mat-expansion-panel-header>
       <mat-panel-title >
         <h3 innerHtml="{{question.title}}"></h3>
@@ -9,6 +9,26 @@
     <mat-divider *ngIf='!lastItem'></mat-divider>
     <div *ngFor="let answer of question.answers">
       <mat-card class="answer" (click)="scorePointsAndUpdate(question, answer)" matTooltip="Click to guess this as the accepted answer." matTooltipPosition="before">
+        <mat-card-title>Answer:</mat-card-title>
+        <mat-card-content>
+          <div innerHtml="{{answer.body}}"></div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </mat-expansion-panel>
+</mat-accordion>
+
+<mat-accordion *ngIf="questionsService.guessedQuestions && this.type==='guessed'" >
+  <mat-expansion-panel *ngFor="let guessedQuestion of questionsService.guessedQuestions;  let lastItem = last">
+    <mat-expansion-panel-header>
+      <mat-panel-title >
+        <h3 innerHtml="{{guessedQuestion.title}}"></h3>
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <div innerHtml="{{guessedQuestion.body}}"></div>
+    <mat-divider *ngIf='!lastItem'></mat-divider>
+    <div *ngFor="let answer of guessedQuestion.answers">
+      <mat-card class="answer" (click)="scorePointsAndUpdate(guessedQuestion, answer)" matTooltip="Click to guess this as the accepted answer." matTooltipPosition="before">
         <mat-card-title>Answer:</mat-card-title>
         <mat-card-content>
           <div innerHtml="{{answer.body}}"></div>
