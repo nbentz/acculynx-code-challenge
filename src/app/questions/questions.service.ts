@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs/BehaviorSubject';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
+import { forkJoin } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -23,8 +23,28 @@ export class QuestionsService {
     });
   }
 
-  public getQuestions() {
-    return this.questions;
+  public getAllQuestions() {
+    const questionsResult = this.http.get<any>(
+      `https://api.stackexchange.com/2.2/search/advanced?pagesize=10&order=desc&sort=creation&accepted=True&answers=2&site=stackoverflow&filter=!)rh-4Rv3X0MXqJcCydZX`
+    );
+    const guessedQuestionsResult = this.http.get<any>(`/questions/guessed`);
+    forkJoin([questionsResult, guessedQuestionsResult]).subscribe( results => {
+      this.questions = results[0].items;
+      this.guessedQuestions = results[1];
+      console.log(this.questions);
+      console.log(this.guessedQuestions);
+      this.updateLocalQuestions();
+      return results;
+    });
+  }
+    public getGuessedQuestionsFromAPI() {
+      return this.http.get<any>(`/questions/guessed`).subscribe( data => {
+        this.guessedQuestions = data;
+        return this.guessedQuestions;
+      });
+    }
+    public getQuestions() {
+      return this.questions;
   }
 
   public getGuessedQuestions() {
@@ -35,17 +55,24 @@ export class QuestionsService {
     this.guessedQuestions = guessedQuestions;
   }
 
-  public getGuessedQuestionsFromfAPI() {
-    return this.http.get<any>(`${this.baseUrl}questions/guessed`).subscribe( data => {
-      this.guessedQuestions = data;
-    });
-  }
 
   public updateQuestion(question) {
     return this.http.patch<any>(`/questions/update`, question).subscribe( data => {
-      console.warn(`Update question: ${data}`);
+      console.log('Updated Question');
+      console.log(data);
     });
   }
 
+  public updateLocalQuestions() {
+    this.guessedQuestions.forEach( g => {
+      this.questions.forEach(q => {
+        if (q.question_id === g.question_id) {
+          let index = this.questions.findIndex(x => x.question_id === g.question_id)
+          this.questions[index] = g
+        }
+      });
+    });
+    return;
+  }
 
 }
