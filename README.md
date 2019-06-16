@@ -60,3 +60,8 @@ Download it from here: https://robomongo.org/download
 ## Install additional NodeJS modules
 run the following commands:
 npm i mongoose
+npm i express
+
+## Start Angular Project
+ng serve -o --proxy-config proxy.conf.json
+
