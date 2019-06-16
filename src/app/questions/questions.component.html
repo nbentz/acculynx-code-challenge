@@ -19,8 +19,8 @@
 </mat-accordion>
 
 <mat-accordion *ngIf="questionsService.guessedQuestions && this.type==='guessed'" >
-  <mat-expansion-panel *ngFor="let guessedQuestion of questionsService.guessedQuestions;  let lastItem = last">
-    <mat-expansion-panel-header>
+  <mat-expansion-panel *ngFor="let guessedQuestion of questionsService.guessedQuestions; let i = index; let lastItem = last">
+    <mat-expansion-panel-header *ngIf="i<10">
       <mat-panel-title >
         <h3 innerHtml="{{guessedQuestion.title}}"></h3>
       </mat-panel-title>
@@ -29,7 +29,7 @@
     <mat-divider *ngIf='!lastItem'></mat-divider>
     <div *ngFor="let answer of guessedQuestion.answers">
       <mat-card class="answer" (click)="scorePointsAndUpdate(guessedQuestion, answer)" matTooltip="Click to guess this as the accepted answer." matTooltipPosition="before">
-        <mat-card-title>Answer:</mat-card-title>
+        <mat-card-title><div>Answer:</div><div *ngIf='guessed'>Number of Guesses: {{answer.guess_count}}</div></mat-card-title>
         <mat-card-content>
           <div innerHtml="{{answer.body}}"></div>
         </mat-card-content>
