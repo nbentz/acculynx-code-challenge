@@ -53,6 +53,10 @@ let QuestionSchema = new mongoose.Schema({
   body: {
     type: String,
     required: true
+  },
+  timeStamp: {
+    type: Number,
+    required: true
   }
 });
 
