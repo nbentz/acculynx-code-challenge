@@ -3,8 +3,7 @@ mat-expansion-panel, mat-card-content {
 }
 
 .answer {
-  transition: 0.3s;
-  margin-bottom: 1em;
+  background-color: white;
 }
 .answer:hover {
   background-color: rgba(200,200,200,.75);
@@ -15,10 +14,19 @@ mat-expansion-panel, mat-card-content {
   transition: 0.1s;
 }
 
+.answer, .correct, .incorrect {
+  transition: 0.3s;
+  margin-bottom: 1em;
+}
 .correct {
-  border: solid green 1px;
+  background-color: #9bff8c;
 }
 
 .incorrect {
-  border: solid red 1px;
+  background-color: #ff8c8c;
+}
+
+.blue {
+  color: #006084;
+  transition: 0.3s;
 }
