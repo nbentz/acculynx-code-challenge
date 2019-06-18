@@ -1,6 +1,4 @@
-# AcculynxCodingChallenge
-
-#Installation instructions
+# AcculynxCodingChallenge Installation Instructions
 
 ## Install NodeJS
 
@@ -28,7 +26,7 @@ Then enter the following cmd (Enter path with no angle brackets):
 Do not close this cmd window, keep it open.
 
 ## MongoDB driver for nodeJS
-Navigate to the parent folder of my project.
+Navigate to the parent Acculynx-coding-challeng folder of my project.
 
 run the following command:
 
@@ -37,7 +35,7 @@ run the following command:
 ## Instal Robo 3T (GUI for MongoDB)
 Download it from here: https://robomongo.org/download
 
-After this is installed create a new connection, git it a name, and keep
+After this is installed create a new connection, give it a name, and keep
 
 all other default values. Double check Acculynx-coding-challenge/server/config.json
 to make sure that local numerical ip address is the same as the servers.
@@ -49,8 +47,15 @@ npm i mongoose
 
 npm i express
 
+## Start the server
+Navigate to the server folder.
+In the cmd line enter:
+node server.js
+
 ## Start Angular Project
 (in Acculynx-coding-challenge folder)
-
 ng serve -o --proxy-config proxy.conf.json
 
+-o opens the app in a browser.
+--proxy-config references the proxy.conf.json file to create a proxy
+which enables local testing due to CORS policy.
