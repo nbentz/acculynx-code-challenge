@@ -43,7 +43,7 @@ all other default values. Double check Acculynx-coding-challenge/server/config.j
 to make sure that local numerical ip address is the same as the servers.
 
 ## Install additional NodeJS modules
-run the following commands in the server folder:
+In the cmd line run the following command in the server folder:
 
 ```shell
 npm i mongoose express
@@ -56,7 +56,7 @@ In the cmd line enter:
 node server.js
 ```
 ## Start Angular Project
-(in Acculynx-coding-challenge folder)
+Navigate to Acculynx-coding-challenge parent folder in the cmd line then enter:
 ```shell
 ng serve -o --proxy-config proxy.conf.json
 ```
