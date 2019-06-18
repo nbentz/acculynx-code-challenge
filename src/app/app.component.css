@@ -4,3 +4,9 @@
   grid-gap: 1em;
   margin: 5em;
 }
+
+.question-header3, mat-dialog-container {
+  font-family: 'Roboto','Helvetica Neue', sans-serif;
+}
+
+

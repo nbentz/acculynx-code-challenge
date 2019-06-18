@@ -11,6 +11,7 @@ export class QuestionsService {
   constructor( private http: HttpClient) { }
 
   private baseUrl = 'https://localhost:3000/';
+  public score: number;
   public questions = [];
   public guessedQuestions = [];
 
@@ -37,14 +38,16 @@ export class QuestionsService {
       return results;
     });
   }
-    public getGuessedQuestionsFromAPI() {
-      return this.http.get<any>(`/questions/guessed`).subscribe( data => {
-        this.guessedQuestions = data;
-        return this.guessedQuestions;
-      });
-    }
-    public getQuestions() {
-      return this.questions;
+
+  public getGuessedQuestionsFromAPI() {
+    return this.http.get<any>(`/questions/guessed`).subscribe( data => {
+      this.guessedQuestions = data;
+      return this.guessedQuestions;
+    });
+  }
+
+  public getQuestions() {
+    return this.questions;
   }
 
   public getGuessedQuestions() {
@@ -67,7 +70,7 @@ export class QuestionsService {
     this.guessedQuestions.forEach( g => {
       this.questions.forEach(q => {
         if (q.question_id === g.question_id) {
-          let index = this.questions.findIndex(x => x.question_id === g.question_id)
+          const index = this.questions.findIndex(x => x.question_id === g.question_id)
           this.questions[index] = g
         }
       });

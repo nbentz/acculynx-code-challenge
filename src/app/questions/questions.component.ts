@@ -1,6 +1,8 @@
 import { Component, OnInit, Input, OnDestroy } from '@angular/core';
 import { QuestionsService } from './questions.service';
 import { Subscription } from 'rxjs';
+import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
+import { ResultsDialogComponent } from './results-dialog/results-dialog.component';
 
 @Component({
   selector: 'app-questions',
@@ -12,14 +14,30 @@ export class QuestionsComponent implements OnInit, OnDestroy {
   @Input() type: string;
   @Input() title: string;
   show = false;
+  showGuesses = false;
   questions = [];
   guessedQuestions = [];
   subscription: Subscription;
-  resultStyles = {
-    "correct" : this.show,
-    "incorrect" : !this.show
-  };
-  constructor( public questionsService: QuestionsService ) {}
+  selectedRow: number;
+
+  constructor( public questionsService: QuestionsService, public dialog: MatDialog ) {}
+
+  // dialog box opened when clicking an answer
+  openDialog(question): void {
+    const dialogRef = this.dialog.open(ResultsDialogComponent, {
+      data: {
+        score: question.score,
+        is_accepted: question.is_accepted,
+        guess_count: question.guess_count
+      }
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+      this.show = false;
+      this.showGuesses = false;
+    });
+  }
 
   // gets the most recent questions & answers
   getAllQuestions() {
@@ -47,15 +65,23 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 
     this.questionsService.guessedQuestions = this.guessedQuestions;
     this.questionsService.updateQuestion(question);
+    this.show = true;
+    this.showGuesses = true;
+    this.openDialog({
+      score: answer.score,
+      guess_count: answer.guess_count,
+      is_accepted: answer.is_accepted
+    });
   }
 
-  private showAnswerAndGuesses() {
-    this.show = true;
 
+  public getGuessedQuestions() {
+    this.questionsService.getGuessedQuestionsFromAPI();
   }
 
   ngOnInit() {
-    this.getAllQuestions();
+    //this.getAllQuestions();
+    this.getGuessedQuestions();
   }
 
   ngOnDestroy() {
