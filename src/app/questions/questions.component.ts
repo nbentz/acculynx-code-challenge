@@ -36,7 +36,7 @@ export class QuestionsComponent implements OnInit{
     this.questionsService.getAllQuestions();
   }
 
-  // scores points, appends answer with timestamp and guesscount.
+  // scores points, appends answer with timestamp and guesscount, opens dialog.
   scorePointsAndUpdate(question, answer) {
     this.questions = this.questionsService.questions;
     !answer.guess_count ? answer.guess_count = 1 : answer.guess_count += 1;
