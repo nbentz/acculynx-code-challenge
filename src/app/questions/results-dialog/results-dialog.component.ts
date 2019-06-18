@@ -12,13 +12,16 @@ export class ResultsDialogComponent implements OnInit {
   public correctScore: string;
   public guessScore: string;
   public scoreScore: string;
+  public totalScore: number;
   constructor( public dialogRef: MatDialogRef<ResultsDialogComponent>, @Inject(MAT_DIALOG_DATA) public data: any) { }
 
+  // formats the data to display score
   formatData() {
     let score = 0;
     let correctScore = '';
     let guessScore = '';
     let scoreScore = '';
+    this.totalScore = this.data.totalScore;
     this.data.is_accepted ? this.title = 'Correct' : this.title = 'Incorrect';
     if (this.data.is_accepted) {
       this.title = 'Correct';
@@ -54,6 +57,12 @@ export class ResultsDialogComponent implements OnInit {
     this.correctScore = correctScore;
     this.scoreScore = scoreScore;
     this.guessScore = guessScore;
+    this.totalScore += this.score;
+  }
+
+  // closes dialog and sends the current totalscore.
+  closeDialog() {
+    this.dialogRef.close({totalScore : this.totalScore});
   }
 
   ngOnInit() {

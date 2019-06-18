@@ -4,7 +4,9 @@
   <p>Number of Votes: {{data.score}} ({{scoreScore}})</p>
   <p>Correct/Incorrect score: {{title}} ({{correctScore}})</p>
   <p>Total: {{score}}</p>
+  <h1>Total Score: {{data.totalScore + score}}</h1>
 </mat-dialog-content>
-<mat-dialog-actions>
-  <button mat-raised-button color="primary" mat-dialog-close>Okay</button>
+<mat-dialog-actions class='dialog-button-wrapper'>
+  <div></div>
+  <button mat-raised-button color="primary" (click)="closeDialog()">Okay</button>
 </mat-dialog-actions>
