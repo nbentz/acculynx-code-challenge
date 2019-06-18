@@ -8,9 +8,10 @@
     <div innerHtml="{{question.body}}"></div>
     <mat-divider *ngIf='!lastItem'></mat-divider>
     <div *ngFor="let answer of question.answers">
-      <mat-card class="answer" (click)="scorePointsAndUpdate(question, answer)" matTooltip="Click to guess this as the accepted answer." matTooltipPosition="before">
+      <mat-card class="answer" [ngClass]="{'answer' : !show, 'correct' : show && answer.is_accepted, 'incorrect' : show && !answer.is_accepted}" (click)="scorePointsAndUpdate(question, answer)" matTooltip="Click to guess this as the accepted answer." matTooltipPosition="before">
         <mat-card-title>Answer:</mat-card-title>
         <mat-card-content>
+          <h2 class='blue' *ngIf='showGuesses'>Guess Count: {{answer.guess_count}}</h2>
           <div innerHtml="{{answer.body}}"></div>
         </mat-card-content>
       </mat-card>
@@ -27,7 +28,7 @@
     </mat-expansion-panel-header>
     <div innerHtml="{{guessedQuestion.body}}"></div>
     <mat-divider *ngIf='!lastItem'></mat-divider>
-    <div *ngFor="let answer of guessedQuestion.answers; let j = index;">
+    <div *ngFor="let answer of guessedQuestion.answers">
       <mat-card [ngClass]="{'answer' : !show, 'correct' : show && answer.is_accepted, 'incorrect' : show && !answer.is_accepted}" (click)="scorePointsAndUpdate(guessedQuestion, answer)" matTooltip="Click to guess this as the accepted answer." matTooltipPosition="before">
         <mat-card-title>Answer:</mat-card-title>
         <mat-card-content>
