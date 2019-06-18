@@ -1,0 +1,654 @@
+  items: [
+  {
+  tags: [
+  "html",
+  "css"
+  ],
+  answers: [
+  {
+  owner: {
+  reputation: 3,
+  user_id: 11608824,
+  user_type: "registered",
+  profile_image: "https://www.gravatar.com/avatar/cf3fe386dd20da8097c737cfd0785b23?s=128&d=identicon&r=PG&f=1",
+  display_name: "Ritish Madan",
+  link: "https://stackoverflow.com/users/11608824/ritish-madan"
+  },
+  up_vote_count: 0,
+  is_accepted: false,
+  score: 0,
+  last_activity_date: 1560559898,
+  answer_id: 56606521,
+  question_id: 56606443,
+  body_markdown: " &lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;style&gt; img { position: absolute; clip: rect(10px,90px,100px,0px); } &lt;/style&gt; &lt;/head&gt; &lt;body&gt; &lt;img src=&quot;https://i.stack.imgur.com/kt5HP.jpg&quot; width=&quot;200&quot; height=&quot;200&quot;&gt; &lt;/body&gt; &lt;/html&gt;",
+  body: "<pre><code>&lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;style&gt; img { position: absolute; clip: rect(10px,90px,100px,0px); } &lt;/style&gt; &lt;/head&gt; &lt;body&gt; &lt;img src="https://i.stack.imgur.com/kt5HP.jpg" width="200" height="200"&gt; &lt;/body&gt; &lt;/html&gt; </code></pre> "
+  },
+  {
+  owner: {
+  reputation: 2056,
+  user_id: 5604852,
+  user_type: "registered",
+  accept_rate: 80,
+  profile_image: "https://lh5.googleusercontent.com/-PDS5mZUZSok/AAAAAAAAAAI/AAAAAAAAD9Q/RGu5AZCnSoo/photo.jpg?sz=128",
+  display_name: "Oliver Trampleasure",
+  link: "https://stackoverflow.com/users/5604852/oliver-trampleasure"
+  },
+  up_vote_count: 0,
+  is_accepted: true,
+  score: 0,
+  last_activity_date: 1560560428,
+  answer_id: 56606559,
+  question_id: 56606443,
+  body_markdown: "Here is an example of how you can do this using CSS and javascript. This will work for any height or width window as it gathers the values from the element. I&#39;ve commented the javascript but let me know if you wanted something else. &lt;hr&gt; Demo === &lt;!-- begin snippet: js hide: false console: true babel: false --&gt; &lt;!-- language: lang-js --&gt; // Load image element image = document.getElementById(&quot;random-window-image&quot;); // Get the height and width of the window window_width = document.getElementById(&quot;random-window-wrapper&quot;).offsetWidth; window_height = document.getElementById(&quot;random-window-wrapper&quot;).offsetHeight; // Calculate a random left value temp_left = (image.width - window_width) * Math.random(); // Calculate a random top value temp_top = (image.height - window_height) * Math.random(); // Apply values to the img image.style.left = &quot;-&quot; + temp_left + &quot;px&quot;; image.style.top = &quot;-&quot; + temp_top + &quot;px&quot;; &lt;!-- language: lang-css --&gt; #random-window-wrapper { width: 200px; height: 200px; overflow: hidden; position: absolute; } #random-window-image { position: relative; } &lt;!-- language: lang-html --&gt; &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js&quot;&gt;&lt;/script&gt; &lt;div id=&quot;random-window-wrapper&quot;&gt; &lt;img id=&quot;random-window-image&quot; src=&quot;https://placeimg.com/640/480/any&quot;&gt; &lt;/div&gt; &lt;!-- end snippet --&gt; ",
+  body: "<p>Here is an example of how you can do this using CSS and javascript. This will work for any height or width window as it gathers the values from the element.</p> <p>I've commented the javascript but let me know if you wanted something else.</p> <hr> <h1>Demo</h1> <p><div class="snippet" data-lang="js" data-hide="false" data-console="true" data-babel="false"> <div class="snippet-code"> <pre class="snippet-code-js lang-js prettyprint-override"><code>// Load image element image = document.getElementById("random-window-image"); // Get the height and width of the window window_width = document.getElementById("random-window-wrapper").offsetWidth; window_height = document.getElementById("random-window-wrapper").offsetHeight; // Calculate a random left value temp_left = (image.width - window_width) * Math.random(); // Calculate a random top value temp_top = (image.height - window_height) * Math.random(); // Apply values to the img image.style.left = "-" + temp_left + "px"; image.style.top = "-" + temp_top + "px";</code></pre> <pre class="snippet-code-css lang-css prettyprint-override"><code>#random-window-wrapper { width: 200px; height: 200px; overflow: hidden; position: absolute; } #random-window-image { position: relative; }</code></pre> <pre class="snippet-code-html lang-html prettyprint-override"><code>&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"&gt;&lt;/script&gt; &lt;div id="random-window-wrapper"&gt; &lt;img id="random-window-image" src="https://placeimg.com/640/480/any"&gt; &lt;/div&gt;</code></pre> </div> </div> </p> "
+  }
+  ],
+  is_answered: true,
+  view_count: 20,
+  accepted_answer_id: 56606559,
+  answer_count: 2,
+  score: -1,
+  last_activity_date: 1560560428,
+  creation_date: 1560558903,
+  last_edit_date: 1560560182,
+  question_id: 56606443,
+  body_markdown: "We have this picture ![1][1] What I want to try to do is on refresh or on load, the picture highlights a 200x200 square, and removes the rest of the picture like this: ![2][2] ![3][3] What is the simplest way to do this without javascript if possible? [1]: https://i.stack.imgur.com/kt5HP.jpg [2]: https://i.imgur.com/COu8yNt.jpg [3]:https://i.imgur.com/ZxvS8MQ.jpg ",
+  link: "https://stackoverflow.com/questions/56606443/how-to-randomize-and-show-a-small-part-of-the-picture",
+  title: "How to randomize and show a small part of the picture?",
+  body: "<p>We have this picture</p> <p><img src="https://i.stack.imgur.com/kt5HP.jpg" alt="1"></p> <p>What I want to try to do is on refresh or on load, the picture highlights a 200x200 square, and removes the rest of the picture like this:</p> <p><img src="https://i.imgur.com/COu8yNt.jpg" alt="2"> <img src="https://i.imgur.com/ZxvS8MQ.jpg" alt="3"></p> <p>What is the simplest way to do this without javascript if possible?</p> "
+  },
+  {
+  tags: [
+  "javascript",
+  "arrays",
+  "reactjs",
+  "object",
+  "ecmascript-6"
+  ],
+  answers: [
+  {
+  owner: {
+  reputation: 25477,
+  user_id: 10221765,
+  user_type: "registered",
+  profile_image: "https://www.gravatar.com/avatar/0e762fef8d87381d5cbd58d851d1b816?s=128&d=identicon&r=PG&f=1",
+  display_name: "Jack Bashford",
+  link: "https://stackoverflow.com/users/10221765/jack-bashford"
+  },
+  up_vote_count: 1,
+  is_accepted: true,
+  score: 1,
+  last_activity_date: 1560559030,
+  answer_id: 56606454,
+  question_id: 56606425,
+  body_markdown: "All it does is it gets the value of the property with the key of `this.props.currency` - so if `currency` is `&quot;GBP&quot;`, the value returned is `{ base: 100, symbol: &quot;&#163;&quot; }`. You can write it like this to make it clearer: export const getCurrencyData = currency =&gt; { const obj = { GBP: { base: 100, symbol: &#39;&#163;&#39; }, USD: { base: 100, symbol: &#39;$&#39; } }; return obj[this.props.currency]; }; You could also take advantage of the explicit return feature with arrow functions to remove the `return` keyword: export const getCurrencyData = currency =&gt; ({ GBP: { base: 100, symbol: &#39;&#163;&#39; }, USD: { base: 100, symbol: &#39;$&#39; }, }[this.props.currency]);",
+  body: "<p>All it does is it gets the value of the property with the key of <code>this.props.currency</code> - so if <code>currency</code> is <code>"GBP"</code>, the value returned is <code>{ base: 100, symbol: "£" }</code>. You can write it like this to make it clearer:</p> <pre><code>export const getCurrencyData = currency =&gt; { const obj = { GBP: { base: 100, symbol: '£' }, USD: { base: 100, symbol: '$' } }; return obj[this.props.currency]; }; </code></pre> <p>You could also take advantage of the explicit return feature with arrow functions to remove the <code>return</code> keyword:</p> <pre><code>export const getCurrencyData = currency =&gt; ({ GBP: { base: 100, symbol: '£' }, USD: { base: 100, symbol: '$' }, }[this.props.currency]); </code></pre> "
+  },
+  {
+  owner: {
+  reputation: 139,
+  user_id: 3562296,
+  user_type: "registered",
+  profile_image: "https://www.gravatar.com/avatar/5ed3ec148d6b5e14903d93389b096c5c?s=128&d=identicon&r=PG&f=1",
+  display_name: "relytmcd",
+  link: "https://stackoverflow.com/users/3562296/relytmcd"
+  },
+  up_vote_count: 0,
+  is_accepted: false,
+  score: 0,
+  last_activity_date: 1560560593,
+  answer_id: 56606572,
+  question_id: 56606425,
+  body_markdown: "Currency is key of the part of the object you are looking for. You could rewrite that as: ```javascript function getCurrencyData(currency) { const allAvailableData = { GBP: { base: 100, symbol: &#39;&#163;&#39; }, USD: { base: 100, symbol: &#39;$&#39; }, } return allAvailableData[currency] } console.log(getCurrencyData(&#39;GBP&#39;)) // { base: 100, symbol: &#39;&#163;&#39; } console.log(getCurrencyData(&#39;USD&#39;)) // { base: 100, symbol: &#39;$&#39; } ```",
+  body: "<p>Currency is key of the part of the object you are looking for.</p> <p>You could rewrite that as:</p> <pre><code>function getCurrencyData(currency) { const allAvailableData = { GBP: { base: 100, symbol: '£' }, USD: { base: 100, symbol: '$' }, } return allAvailableData[currency] } console.log(getCurrencyData('GBP')) // { base: 100, symbol: '£' } console.log(getCurrencyData('USD')) // { base: 100, symbol: '$' } </code></pre> "
+  }
+  ],
+  is_answered: true,
+  view_count: 29,
+  accepted_answer_id: 56606454,
+  answer_count: 2,
+  score: 1,
+  last_activity_date: 1560560593,
+  creation_date: 1560558639,
+  last_edit_date: 1560559506,
+  question_id: 56606425,
+  body_markdown: "Can someone describe the purpose of [this.props.currency] placed after the return object or a place I can read about this pattern, as I haven&#39;t seen it before. I am not asking what this.props.currency is but rather it&#39;s purpose after the returned object. Seen on this blog post: https://javascriptplayground.com/react-extracting-logic/ export const getCurrencyData = currency =&gt; { return { GBP: { base: 100, symbol: &#39;&#163;&#39; }, USD: { base: 100, symbol: &#39;$&#39; }, }[this.props.currency]; };",
+  link: "https://stackoverflow.com/questions/56606425/what-is-the-purpose-of-this-array-after-the-returned-object",
+  title: "What is the purpose of this array after the returned object?",
+  body: "<p>Can someone describe the purpose of [this.props.currency] placed after the return object or a place I can read about this pattern, as I haven't seen it before.</p> <p>I am not asking what this.props.currency is but rather it's purpose after the returned object. </p> <p>Seen on this blog post: <a href="https://javascriptplayground.com/react-extracting-logic/" rel="nofollow noreferrer">https://javascriptplayground.com/react-extracting-logic/</a></p> <pre><code>export const getCurrencyData = currency =&gt; { return { GBP: { base: 100, symbol: '£' }, USD: { base: 100, symbol: '$' }, }[this.props.currency]; }; </code></pre> "
+  },
+  {
+  tags: [
+  "javascript",
+  "html",
+  "css"
+  ],
+  answers: [
+  {
+  owner: {
+  reputation: 98,
+  user_id: 4228488,
+  user_type: "registered",
+  accept_rate: 100,
+  profile_image: "https://www.gravatar.com/avatar/7fad7743e03eaf3bfdcaa7cd584c5290?s=128&d=identicon&r=PG&f=1",
+  display_name: "Nacho Ramos S&#225;nchez",
+  link: "https://stackoverflow.com/users/4228488/nacho-ramos-s%c3%a1nchez"
+  },
+  up_vote_count: 0,
+  is_accepted: false,
+  score: 0,
+  last_activity_date: 1560560382,
+  last_edit_date: 1560560382,
+  answer_id: 56606469,
+  question_id: 56606362,
+  body_markdown: "You can use the following attributes: position: -webkit-sticky; /* for Safari */ position: sticky; If you use this for example on the first child of a column, or a the full header, it will make your desire effect. &lt;tbody&gt; &lt;tr&gt; &lt;th&gt;Whatever&lt;/th&gt; &lt;td&gt;Whatever&lt;/td&gt; ... &lt;/tr&gt; &lt;tr&gt; &lt;th&gt;Whatever&lt;/th&gt; &lt;td&gt;Whatever&lt;/td&gt; ... &lt;/tr&gt; &lt;/tbody&gt; thead th { z-index:999; top:0; position: -webkit-sticky; position: sticky; } tbody th { left:0; position: -webkit-sticky; position: sticky; } tbody th:first-child { position: -webkit-sticky; position: sticky; z-index: 999; left:0; } Try it! ",
+  body: "<p>You can use the following attributes:</p> <pre><code> position: -webkit-sticky; /* for Safari */ position: sticky; </code></pre> <p>If you use this for example on the first child of a column, or a the full header, it will make your desire effect.</p> <pre><code> &lt;tbody&gt; &lt;tr&gt; &lt;th&gt;Whatever&lt;/th&gt; &lt;td&gt;Whatever&lt;/td&gt; ... &lt;/tr&gt; &lt;tr&gt; &lt;th&gt;Whatever&lt;/th&gt; &lt;td&gt;Whatever&lt;/td&gt; ... &lt;/tr&gt; &lt;/tbody&gt; thead th { z-index:999; top:0; position: -webkit-sticky; position: sticky; } tbody th { left:0; position: -webkit-sticky; position: sticky; } tbody th:first-child { position: -webkit-sticky; position: sticky; z-index: 999; left:0; } </code></pre> <p>Try it!</p> "
+  },
+  {
+  owner: {
+  reputation: 4611,
+  user_id: 731416,
+  user_type: "registered",
+  profile_image: "https://i.stack.imgur.com/8ZdZs.png?s=128&g=1",
+  display_name: "Todd Chaffee",
+  link: "https://stackoverflow.com/users/731416/todd-chaffee"
+  },
+  up_vote_count: 0,
+  is_accepted: true,
+  score: 0,
+  last_activity_date: 1560561383,
+  last_edit_date: 1560561383,
+  answer_id: 56606486,
+  question_id: 56606362,
+  body_markdown: "I used a combination of z-index, and a change to your logic to get it working. That corner column needs both and x and y axis transforms. &lt;!-- begin snippet: js hide: false console: true babel: false --&gt; &lt;!-- language: lang-js --&gt; var $win = $(window), $stickyHeader = $(&#39;.sticky-header&#39;), $stickyColumns = $(&#39;.sticky-column&#39;), $stickyCorner = $(&#39;.sticky-corner&#39;); $(document).on(&#39;scroll&#39;, function () { deltaY = $win.scrollTop() - $stickyHeader.offset().top; deltaX = $win.scrollLeft() - $stickyHeader.offset().left; $stickyColumns.css({ &quot;transform&quot;: &quot;translate(&quot; + (deltaX &gt; 0 ? deltaX : 0) + &quot;px, 0px)&quot; }); $stickyHeader.children().css({ &quot;transform&quot;: &quot;translate(0px,&quot; + (deltaY &gt; 0 ? deltaY : 0) + &quot;px)&quot; }); $stickyCorner.css({ &quot;transform&quot;: &quot;translate(&quot; + (deltaX &gt; 0 ? deltaX : 0) + &quot;px,&quot; + (deltaY &gt; 0 ? deltaY : 0) + &quot;px)&quot; }); }); &lt;!-- language: lang-css --&gt; table { margin: 100px auto 800px auto; } thead th { background-color: yellow; border-right: 2px solid black; border-left: 2px solid black; border-bottom: 1px solid black; border-top: 1px solid black; height: 60px; z-index: 3; } tbody td { background-color: red; border-right: 2px solid black; border-left: 2px solid black; border-bottom: 1px solid black; border-top: 1px solid black; height: 30px; z-index: 1; } tbody td.sticky-column { z-index: 1; } thead tr.sticky-column { z-index: 2; } thead th.sticky-corner { background-color: orange; z-index: 10; position: relative; } &lt;!-- language: lang-html --&gt; &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js&quot;&gt;&lt;/script&gt; &lt;table class=&quot;tablesorter&quot;&gt; &lt;thead&gt; &lt;tr class=&quot;sticky-header&quot;&gt; &lt;th class=&quot;sticky-corner&quot;&gt;Whatever Header&lt;/th&gt; &lt;th&gt;Whatever Header&lt;/th&gt; &lt;th&gt;Whatever Header&lt;/th&gt; &lt;th&gt;Whatever Header&lt;/th&gt; &lt;th&gt;Whatever Header&lt;/th&gt; &lt;th&gt;Whatever Header&lt;/th&gt; &lt;th&gt;Whatever Header&lt;/th&gt; &lt;th&gt;Whatever Header&lt;/th&gt; &lt;th&gt;Whatever Header&lt;/th&gt; &lt;th&gt;Whatever Header&lt;/th&gt; &lt;th&gt;Whatever Header&lt;/th&gt; &lt;th&gt;Whatever Header&lt;/th&gt; &lt;th&gt;Whatever Header&lt;/th&gt; &lt;th&gt;Whatever Header&lt;/th&gt; &lt;th&gt;Whatever Header&lt;/th&gt; &lt;th&gt;Whatever Header&lt;/th&gt; &lt;th&gt;Whatever Header&lt;/th&gt; &lt;th&gt;Whatever Header&lt;/th&gt; &lt;th&gt;Whatever Header&lt;/th&gt; &lt;th&gt;Whatever Header&lt;/th&gt; &lt;th&gt;Whatever Header&lt;/th&gt; &lt;/tr&gt; &lt;/thead&gt; &lt;tbody&gt; &lt;tr&gt; &lt;td class=&quot;sticky-column&quot;&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td class=&quot;sticky-column&quot;&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td class=&quot;sticky-column&quot;&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td class=&quot;sticky-column&quot;&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td class=&quot;sticky-column&quot;&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td class=&quot;sticky-column&quot;&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td class=&quot;sticky-column&quot;&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td class=&quot;sticky-column&quot;&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td class=&quot;sticky-column&quot;&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td class=&quot;sticky-column&quot;&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;/tr&gt; &lt;/tbody&gt; &lt;/table&gt; &lt;!-- end snippet --&gt; ",
+  body: "<p>I used a combination of z-index, and a change to your logic to get it working. That corner column needs both and x and y axis transforms.</p> <p><div class="snippet" data-lang="js" data-hide="false" data-console="true" data-babel="false"> <div class="snippet-code"> <pre class="snippet-code-js lang-js prettyprint-override"><code>var $win = $(window), $stickyHeader = $('.sticky-header'), $stickyColumns = $('.sticky-column'), $stickyCorner = $('.sticky-corner'); $(document).on('scroll', function () { deltaY = $win.scrollTop() - $stickyHeader.offset().top; deltaX = $win.scrollLeft() - $stickyHeader.offset().left; $stickyColumns.css({ "transform": "translate(" + (deltaX &gt; 0 ? deltaX : 0) + "px, 0px)" }); $stickyHeader.children().css({ "transform": "translate(0px," + (deltaY &gt; 0 ? deltaY : 0) + "px)" }); $stickyCorner.css({ "transform": "translate(" + (deltaX &gt; 0 ? deltaX : 0) + "px," + (deltaY &gt; 0 ? deltaY : 0) + "px)" }); });</code></pre> <pre class="snippet-code-css lang-css prettyprint-override"><code>table { margin: 100px auto 800px auto; } thead th { background-color: yellow; border-right: 2px solid black; border-left: 2px solid black; border-bottom: 1px solid black; border-top: 1px solid black; height: 60px; z-index: 3; } tbody td { background-color: red; border-right: 2px solid black; border-left: 2px solid black; border-bottom: 1px solid black; border-top: 1px solid black; height: 30px; z-index: 1; } tbody td.sticky-column { z-index: 1; } thead tr.sticky-column { z-index: 2; } thead th.sticky-corner { background-color: orange; z-index: 10; position: relative; }</code></pre> <pre class="snippet-code-html lang-html prettyprint-override"><code>&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"&gt;&lt;/script&gt; &lt;table class="tablesorter"&gt; &lt;thead&gt; &lt;tr class="sticky-header"&gt; &lt;th class="sticky-corner"&gt;Whatever Header&lt;/th&gt; &lt;th&gt;Whatever Header&lt;/th&gt; &lt;th&gt;Whatever Header&lt;/th&gt; &lt;th&gt;Whatever Header&lt;/th&gt; &lt;th&gt;Whatever Header&lt;/th&gt; &lt;th&gt;Whatever Header&lt;/th&gt; &lt;th&gt;Whatever Header&lt;/th&gt; &lt;th&gt;Whatever Header&lt;/th&gt; &lt;th&gt;Whatever Header&lt;/th&gt; &lt;th&gt;Whatever Header&lt;/th&gt; &lt;th&gt;Whatever Header&lt;/th&gt; &lt;th&gt;Whatever Header&lt;/th&gt; &lt;th&gt;Whatever Header&lt;/th&gt; &lt;th&gt;Whatever Header&lt;/th&gt; &lt;th&gt;Whatever Header&lt;/th&gt; &lt;th&gt;Whatever Header&lt;/th&gt; &lt;th&gt;Whatever Header&lt;/th&gt; &lt;th&gt;Whatever Header&lt;/th&gt; &lt;th&gt;Whatever Header&lt;/th&gt; &lt;th&gt;Whatever Header&lt;/th&gt; &lt;th&gt;Whatever Header&lt;/th&gt; &lt;/tr&gt; &lt;/thead&gt; &lt;tbody&gt; &lt;tr&gt; &lt;td class="sticky-column"&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td class="sticky-column"&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td class="sticky-column"&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td class="sticky-column"&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td class="sticky-column"&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td class="sticky-column"&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td class="sticky-column"&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td class="sticky-column"&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td class="sticky-column"&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td class="sticky-column"&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; &lt;/tr&gt; &lt;/tbody&gt; &lt;/table&gt;</code></pre> </div> </div> </p> "
+  },
+  {
+  owner: {
+  reputation: 292,
+  user_id: 4935426,
+  user_type: "registered",
+  profile_image: "https://www.gravatar.com/avatar/1bd91a2863308d589869abf9a623e71e?s=128&d=identicon&r=PG&f=1",
+  display_name: "tdjprog",
+  link: "https://stackoverflow.com/users/4935426/tdjprog"
+  },
+  up_vote_count: 0,
+  is_accepted: false,
+  score: 0,
+  last_activity_date: 1560562421,
+  answer_id: 56606693,
+  question_id: 56606362,
+  body_markdown: "try this sollution .sticky-header { position: absolute; z-index: 4; } &gt; i suggest to use grid unstead of table",
+  body: "<p>try this sollution</p> <pre><code>.sticky-header { position: absolute; z-index: 4; } </code></pre> <blockquote> <p>i suggest to use grid unstead of table</p> </blockquote> "
+  }
+  ],
+  is_answered: true,
+  view_count: 29,
+  accepted_answer_id: 56606486,
+  answer_count: 3,
+  score: 0,
+  last_activity_date: 1560562421,
+  creation_date: 1560557713,
+  question_id: 56606362,
+  body_markdown: "I am trying to implement an HTML table that could have a sticky column(s) and a sticky header at the same time, using javascript and css. Basically I am trying to ensure the stickiness of the header and the columns by translating them at the right position whenever the scroll position is changed. This technique works fine, when I scroll horizontally the sticky columns are properly displayed at the fixed position, but when I start scrolling vertically the sticky column cells overlap the header cells and hide them. [Here is what I am seeing when it happens][1] I tried to play with the z-index to make sure the header is always on top of the rows, but for some reason it&#39;s not working. If anyone ever encountered this issue and could share a way to fix it, that would be really appreciated. Thanks in advance. HTML: &lt;table class=&quot;tablesorter&quot;&gt; &lt;thead class=&quot;sticky-header&quot;&gt; &lt;tr&gt; &lt;th class=&quot;sticky-column&quot;&gt;Whatever Header&lt;/th&gt; &lt;th&gt;Whatever Header&lt;/th&gt; &lt;th&gt;Whatever Header&lt;/th&gt; ... &lt;/tr&gt; &lt;/thead&gt; &lt;tbody&gt; &lt;tr&gt; &lt;td class=&quot;sticky-column&quot;&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; ... &lt;/tr&gt; &lt;tr&gt; &lt;td class=&quot;sticky-column&quot;&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; ... &lt;/tr&gt; &lt;/tbody&gt; &lt;/table&gt; Javascript: var $win = $(window), $stickyHeader = $(&#39;.sticky-header&#39;), $stickyColumns = $(&#39;.sticky-column&#39;); $(document).on(&#39;scroll&#39;, function () { deltaY = $win.scrollTop() - $stickyHeader.offset().top; deltaX = $win.scrollLeft() - $stickyHeader.offset().left; $stickyHeader.children().css({ &quot;transform&quot;: &quot;translate(0px,&quot; + (deltaY &gt; 0 ? deltaY : 0) + &quot;px)&quot; }); $stickyColumns.css({ &quot;transform&quot;: &quot;translate(&quot; + (deltaX &gt; 0 ? deltaX : 0) + &quot;px, 0px)&quot; }); }); CSS: table { margin: 100px auto 800px auto; } thead th { background-color: yellow; border-right: 2px solid black; border-left: 2px solid black; border-bottom: 1px solid black; border-top: 1px solid black; height: 60px; z-index: 3; } tbody td { background-color: red; border-right: 2px solid black; border-left: 2px solid black; border-bottom: 1px solid black; border-top: 1px solid black; height: 30px; z-index: 1; } tbody td.sticky-column { z-index: 2; } tbody th.sticky-column { z-index: 4; } Here is the JSFiddle reproducing the issue: http://jsfiddle.net/asoua/5942rqty/ [1]: https://i.stack.imgur.com/Pp5eR.png",
+  link: "https://stackoverflow.com/questions/56606362/html-table-sticky-column-overlapping-header",
+  title: "HTML table: Sticky column overlapping header",
+  body: "<p>I am trying to implement an HTML table that could have a sticky column(s) and a sticky header at the same time, using javascript and css.</p> <p>Basically I am trying to ensure the stickiness of the header and the columns by translating them at the right position whenever the scroll position is changed.</p> <p>This technique works fine, when I scroll horizontally the sticky columns are properly displayed at the fixed position, but when I start scrolling vertically the sticky column cells overlap the header cells and hide them.</p> <p><a href="https://i.stack.imgur.com/Pp5eR.png" rel="nofollow noreferrer">Here is what I am seeing when it happens</a></p> <p>I tried to play with the z-index to make sure the header is always on top of the rows, but for some reason it's not working.</p> <p>If anyone ever encountered this issue and could share a way to fix it, that would be really appreciated.</p> <p>Thanks in advance.</p> <p>HTML:</p> <pre><code>&lt;table class="tablesorter"&gt; &lt;thead class="sticky-header"&gt; &lt;tr&gt; &lt;th class="sticky-column"&gt;Whatever Header&lt;/th&gt; &lt;th&gt;Whatever Header&lt;/th&gt; &lt;th&gt;Whatever Header&lt;/th&gt; ... &lt;/tr&gt; &lt;/thead&gt; &lt;tbody&gt; &lt;tr&gt; &lt;td class="sticky-column"&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; ... &lt;/tr&gt; &lt;tr&gt; &lt;td class="sticky-column"&gt;Whatever&lt;/td&gt; &lt;td&gt;Whatever&lt;/td&gt; ... &lt;/tr&gt; &lt;/tbody&gt; &lt;/table&gt; </code></pre> <p>Javascript:</p> <pre><code>var $win = $(window), $stickyHeader = $('.sticky-header'), $stickyColumns = $('.sticky-column'); $(document).on('scroll', function () { deltaY = $win.scrollTop() - $stickyHeader.offset().top; deltaX = $win.scrollLeft() - $stickyHeader.offset().left; $stickyHeader.children().css({ "transform": "translate(0px," + (deltaY &gt; 0 ? deltaY : 0) + "px)" }); $stickyColumns.css({ "transform": "translate(" + (deltaX &gt; 0 ? deltaX : 0) + "px, 0px)" }); }); </code></pre> <p>CSS:</p> <pre><code> table { margin: 100px auto 800px auto; } thead th { background-color: yellow; border-right: 2px solid black; border-left: 2px solid black; border-bottom: 1px solid black; border-top: 1px solid black; height: 60px; z-index: 3; } tbody td { background-color: red; border-right: 2px solid black; border-left: 2px solid black; border-bottom: 1px solid black; border-top: 1px solid black; height: 30px; z-index: 1; } tbody td.sticky-column { z-index: 2; } tbody th.sticky-column { z-index: 4; } </code></pre> <p>Here is the JSFiddle reproducing the issue: <a href="http://jsfiddle.net/asoua/5942rqty/" rel="nofollow noreferrer">http://jsfiddle.net/asoua/5942rqty/</a></p> "
+  },
+  {
+  tags: [
+  "numpy",
+  "opencv"
+  ],
+  answers: [
+  {
+  owner: {
+  reputation: 157,
+  user_id: 3461095,
+  user_type: "registered",
+  profile_image: "https://i.stack.imgur.com/cxm5E.png?s=128&g=1",
+  display_name: "Julian",
+  link: "https://stackoverflow.com/users/3461095/julian"
+  },
+  up_vote_count: 1,
+  is_accepted: false,
+  score: 1,
+  last_activity_date: 1560558596,
+  answer_id: 56606420,
+  question_id: 56606294,
+  body_markdown: "The comment by @ Edeki Okoh is correct. You need to find a way to take the color channels into account. There is probably a much cleaner solution but a hacky way to do this would be something like this. Each color channels has values from 0 to 255 so we add 1 in order to make sure that it gets multiplied. Blue will represent the last the digits, green the middle three ones and red the first three. Now every value is representing a unique color. ``` b,g,r = cv2.split(src) shiftet_im = b + 1000 * (g + 1) + 1000 * 1000 * (r + 1) ``` The resulting image should have one channel with each value representing a unique color combination. ",
+  body: "<p>The comment by @ Edeki Okoh is correct. You need to find a way to take the color channels into account. There is probably a much cleaner solution but a hacky way to do this would be something like this. Each color channels has values from 0 to 255 so we add 1 in order to make sure that it gets multiplied. Blue will represent the last the digits, green the middle three ones and red the first three. Now every value is representing a unique color. </p> <pre><code>b,g,r = cv2.split(src) shiftet_im = b + 1000 * (g + 1) + 1000 * 1000 * (r + 1) </code></pre> <p>The resulting image should have one channel with each value representing a unique color combination.</p> "
+  },
+  {
+  owner: {
+  reputation: 32784,
+  user_id: 7207392,
+  user_type: "registered",
+  accept_rate: 73,
+  profile_image: "https://www.gravatar.com/avatar/dadc9567dde5f02b09a29695eca1ce40?s=128&d=identicon&r=PG&f=1",
+  display_name: "Paul Panzer",
+  link: "https://stackoverflow.com/users/7207392/paul-panzer"
+  },
+  up_vote_count: 1,
+  is_accepted: true,
+  score: 1,
+  last_activity_date: 1560559056,
+  answer_id: 56606457,
+  question_id: 56606294,
+  body_markdown: "If you look at the `unique`s your getting back I&#39;m pretty sure you&#39;ll find they are scalars. You need to use the `axis` keyword: &gt;&gt;&gt; import numpy as np &gt;&gt;&gt; from scipy.misc import face &gt;&gt;&gt; &gt;&gt;&gt; img = face() &gt;&gt;&gt; np.unique(img.reshape(-1, img.shape[-1]), axis=0, return_counts=True) (array([[ 0, 0, 5], [ 0, 0, 7], [ 0, 0, 9], ..., [255, 248, 255], [255, 249, 255], [255, 252, 255]], dtype=uint8), array([1, 2, 2, ..., 1, 1, 1])) ",
+  body: "<p>If you look at the <code>unique</code>s your getting back I'm pretty sure you'll find they are scalars. You need to use the <code>axis</code> keyword:</p> <pre><code>&gt;&gt;&gt; import numpy as np &gt;&gt;&gt; from scipy.misc import face &gt;&gt;&gt; &gt;&gt;&gt; img = face() &gt;&gt;&gt; np.unique(img.reshape(-1, img.shape[-1]), axis=0, return_counts=True) (array([[ 0, 0, 5], [ 0, 0, 7], [ 0, 0, 9], ..., [255, 248, 255], [255, 249, 255], [255, 252, 255]], dtype=uint8), array([1, 2, 2, ..., 1, 1, 1])) </code></pre> "
+  },
+  {
+  owner: {
+  reputation: 830,
+  user_id: 11530294,
+  user_type: "registered",
+  profile_image: "https://lh6.googleusercontent.com/-Wmx8FmXvssw/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rddovKe67tDYNr2B-3B5bFJOj8cZg/mo/photo.jpg?sz=128",
+  display_name: "Dr Yuan Shenghai",
+  link: "https://stackoverflow.com/users/11530294/dr-yuan-shenghai"
+  },
+  up_vote_count: 0,
+  is_accepted: false,
+  score: 0,
+  last_activity_date: 1560561821,
+  answer_id: 56606653,
+  question_id: 56606294,
+  body_markdown: "I think you only counted for a single channel e.g R-value out of full RGB channel. that&#39;s why you have only 252 discrete values. In theory R G B each can have 256 discrete states. **256*256*256 =16777216** means in total you can have 16777216 possibilities of colors. My suggestion is to convert RGB uchar **CV_8UC3** into a single 32bit data structure like **CV_32FC1** Let Given image as input [![enter image description here][1]][1] # my test small sie text image. which I can count the number of the state by hand import cv2 import numpy as np image=cv2.imread(&#39;/home/usr/naneDownloads/vuQ9y.png&#39; )# change here b,g,r = cv2.split(image) out_in_32U_2D = np.int32(b) &lt;&lt; 16 + np.int32(g) &lt;&lt; 8 + np.int32(r) #bit wise shift 8 for each channel. out_in_32U_1D= out_in_32U_2D.reshape(-1) #convert to 1D np.unique(out_in_32U_1D) array([-2147483648, -2080374784, -1073741824, -1006632960, 0, 14336, 22528, 30720, 58368, 91136, 123904, 237568, 368640, 499712, 966656, 1490944, 2015232, 3932160, 6029312, 8126464, 15990784, 24379392, 32768000, 65011712, 67108864, 98566144, 132120576, 264241152, 398458880, 532676608, 536870912, 805306368, 1073741824, 1140850688, 1342177280, 1610612736, 1879048192], dtype=int32) len(np.unique(out_in_32U_1D)) 37 # correct for my test wirting paper when compare when my manual counting The code here should be able to provide you with what you needed [1]: https://i.stack.imgur.com/WrbDa.png",
+  body: "<p>I think you only counted for a single channel e.g R-value out of full RGB channel. that's why you have only 252 discrete values. </p> <p>In theory R G B each can have 256 discrete states. </p> <p><strong>256*256*256 =16777216</strong> </p> <p>means in total you can have 16777216 possibilities of colors. </p> <p>My suggestion is to convert RGB uchar <strong>CV_8UC3</strong> into a single 32bit data structure like <strong>CV_32FC1</strong></p> <p>Let Given image as input </p> <p><a href="https://i.stack.imgur.com/WrbDa.png" rel="nofollow noreferrer"><img src="https://i.stack.imgur.com/WrbDa.png" alt="enter image description here"></a> # my test small sie text image. which I can count the number of the state by hand</p> <pre><code>import cv2 import numpy as np image=cv2.imread('/home/usr/naneDownloads/vuQ9y.png' )# change here b,g,r = cv2.split(image) out_in_32U_2D = np.int32(b) &lt;&lt; 16 + np.int32(g) &lt;&lt; 8 + np.int32(r) #bit wise shift 8 for each channel. out_in_32U_1D= out_in_32U_2D.reshape(-1) #convert to 1D np.unique(out_in_32U_1D) array([-2147483648, -2080374784, -1073741824, -1006632960, 0, 14336, 22528, 30720, 58368, 91136, 123904, 237568, 368640, 499712, 966656, 1490944, 2015232, 3932160, 6029312, 8126464, 15990784, 24379392, 32768000, 65011712, 67108864, 98566144, 132120576, 264241152, 398458880, 532676608, 536870912, 805306368, 1073741824, 1140850688, 1342177280, 1610612736, 1879048192], dtype=int32) len(np.unique(out_in_32U_1D)) 37 # correct for my test wirting paper when compare when my manual counting </code></pre> <p>The code here should be able to provide you with what you needed</p> "
+  }
+  ],
+  is_answered: true,
+  view_count: 19,
+  accepted_answer_id: 56606457,
+  answer_count: 3,
+  score: 1,
+  last_activity_date: 1560561821,
+  creation_date: 1560556810,
+  last_edit_date: 1560559783,
+  question_id: 56606294,
+  body_markdown: "I am trying to count the number of unique colours in an image. I have some code that I think should work however when I run it on an image its saying a I have 252 different colours out of a possible 16,777,216‬. That seems wrong given the image is BGR so shouldn&#39;t their be much more different colours (thousands not hundreds?)? def count_colours(src): unique, counts = np.unique(src, return_counts=True) print(counts.size) return counts.size src = cv2.imread(&#39;../../images/di8.jpg&#39;) src = imutils.resize(src, height=300) count_colours(src) # outputs 252 different colours!? only? Is that value correct? And if not how can I fix my function `count_colours()`? Source image: [![enter image description here][1]][1] **Edit: is this correct?** def count_colours(src): unique, counts = np.unique(src.reshape(-1, src.shape[-1]), axis=0, return_counts=True) return counts.size [1]: https://i.stack.imgur.com/tUkN1.jpg",
+  link: "https://stackoverflow.com/questions/56606294/count-number-of-unique-colours-in-image",
+  title: "Count number of unique colours in image",
+  body: "<p>I am trying to count the number of unique colours in an image. I have some code that I think should work however when I run it on an image its saying a I have 252 different colours out of a possible 16,777,216‬. That seems wrong given the image is BGR so shouldn't their be much more different colours (thousands not hundreds?)?</p> <pre><code>def count_colours(src): unique, counts = np.unique(src, return_counts=True) print(counts.size) return counts.size src = cv2.imread('../../images/di8.jpg') src = imutils.resize(src, height=300) count_colours(src) # outputs 252 different colours!? only? </code></pre> <p>Is that value correct? And if not how can I fix my function <code>count_colours()</code>?</p> <p>Source image: <a href="https://i.stack.imgur.com/tUkN1.jpg" rel="nofollow noreferrer"><img src="https://i.stack.imgur.com/tUkN1.jpg" alt="enter image description here"></a></p> <p><strong>Edit: is this correct?</strong></p> <pre><code>def count_colours(src): unique, counts = np.unique(src.reshape(-1, src.shape[-1]), axis=0, return_counts=True) return counts.size </code></pre> "
+  },
+  {
+  tags: [
+  "python",
+  "matplotlib"
+  ],
+  answers: [
+  {
+  owner: {
+  reputation: 1747,
+  user_id: 3697870,
+  user_type: "registered",
+  accept_rate: 40,
+  profile_image: "https://i.stack.imgur.com/krATc.jpg?s=128&g=1",
+  display_name: "Heath Raftery",
+  link: "https://stackoverflow.com/users/3697870/heath-raftery"
+  },
+  up_vote_count: 1,
+  is_accepted: false,
+  score: 1,
+  last_activity_date: 1560558059,
+  last_edit_date: 1560558059,
+  answer_id: 56606370,
+  question_id: 56606285,
+  body_markdown: "The reason you keep seeing suggestions to generate points is that in order to draw the curve on a computer screen, a set of points must be generated to determine which pixels to set. As a human we tend to think that the graph of a function is based on the function. For a computer to do it is needs to know at every point on the screen, is this point part of the function or not. A screen is just a bit array of pixels. For the computer to know which pixel to set, it must know whether it is on the curve or not. The easiest way to do that is to generate a set of pixels which are on the curve - that is, create points (x,y) that satisfy y=f(x). Any library that draws the curve will generate the points. This step becomes so trivial that most graphing libraries will expect you&#39;ve already done that step. There&#39;s not much point the library doing it, because the difference would only be equivalent to: plt.plot(xvals, f(xvals)) compared to: yvals = f(xvals) plt.plot(xvals, yvals) ",
+  body: "<p>The reason you keep seeing suggestions to generate points is that in order to draw the curve on a computer screen, a set of points must be generated to determine which pixels to set. As a human we tend to think that the graph of a function is based on the function. For a computer to do it is needs to know at every point on the screen, is this point part of the function or not. A screen is just a bit array of pixels. For the computer to know which pixel to set, it must know whether it is on the curve or not. The easiest way to do that is to generate a set of pixels which are on the curve - that is, create points (x,y) that satisfy y=f(x).</p> <p>Any library that draws the curve will generate the points. This step becomes so trivial that most graphing libraries will expect you've already done that step. There's not much point the library doing it, because the difference would only be equivalent to:</p> <pre><code>plt.plot(xvals, f(xvals)) </code></pre> <p>compared to:</p> <pre><code>yvals = f(xvals) plt.plot(xvals, yvals) </code></pre> "
+  },
+  {
+  owner: {
+  reputation: 151700,
+  user_id: 4124317,
+  user_type: "registered",
+  accept_rate: 78,
+  profile_image: "https://i.stack.imgur.com/wsHAV.png?s=128&g=1",
+  display_name: "ImportanceOfBeingErnest",
+  link: "https://stackoverflow.com/users/4124317/importanceofbeingernest"
+  },
+  up_vote_count: 1,
+  is_accepted: true,
+  score: 1,
+  last_activity_date: 1560558064,
+  answer_id: 56606382,
+  question_id: 56606285,
+  body_markdown: "Since the question is tagged with matplotlib, here is how it&#39;s done; for example plot y=f(x)=x^2 in the interval [-3,3]. import numpy as np import matplotlib.pyplot as plt interval = -3,3 f = lambda x: x**2 x = np.linspace(*interval, 301) plt.plot(x, f(x)) plt.show() [![enter image description here][1]][1] [1]: https://i.stack.imgur.com/FLovf.png",
+  body: "<p>Since the question is tagged with matplotlib, here is how it's done; for example plot y=f(x)=x^2 in the interval [-3,3].</p> <pre><code>import numpy as np import matplotlib.pyplot as plt interval = -3,3 f = lambda x: x**2 x = np.linspace(*interval, 301) plt.plot(x, f(x)) plt.show() </code></pre> <p><a href="https://i.stack.imgur.com/FLovf.png" rel="nofollow noreferrer"><img src="https://i.stack.imgur.com/FLovf.png" alt="enter image description here"></a></p> "
+  }
+  ],
+  is_answered: true,
+  view_count: 18,
+  accepted_answer_id: 56606382,
+  answer_count: 2,
+  score: -4,
+  last_activity_date: 1560558064,
+  creation_date: 1560556699,
+  last_edit_date: 1560558024,
+  question_id: 56606285,
+  body_markdown: "I am trying to find out how to do this. All the examples which I find online, are asking me to first generate some list of points/couples (x,y) and then plot these couples. But I don&#39;t quite want this... Is there a library/module where I can just: 1. provide the interval for x; 2. the formula/function for y (y=f(x)); 3. ... maybe also specify which part of the plane to visualize and just have the library draw the graphic of y. I guess there should be a way to do this since it does not seem complicated at all. Seems a pretty standard things, I think. **Example: Say I want to plot `y = sqrt(x*(1-x))` for `x` in `[0,1]`... but show this drawing in a 600x400 screen area (scaled properly). How do I do this?** ",
+  link: "https://stackoverflow.com/questions/56606285/draw-in-the-2d-plane-the-graph-of-y-fx-in-python",
+  title: "Draw in the 2D plane the graph of y=f(x) in Python",
+  body: "<p>I am trying to find out how to do this.</p> <p>All the examples which I find online, are asking me to first generate some list of points/couples (x,y) and then plot these couples.</p> <p>But I don't quite want this... Is there a library/module where I can just: </p> <ol> <li>provide the interval for x; </li> <li>the formula/function for y (y=f(x)); </li> <li>... maybe also specify which part of the plane to visualize </li> </ol> <p>and just have the library draw the graphic of y.</p> <p>I guess there should be a way to do this since it does not seem complicated at all. Seems a pretty standard things, I think. </p> <p><strong>Example:<br> Say I want to plot <code>y = sqrt(x*(1-x))</code> for <code>x</code> in <code>[0,1]</code>... but show this drawing in a 600x400 screen area (scaled properly). How do I do this?</strong> </p> "
+  },
+  {
+  tags: [
+  "java",
+  "regex",
+  "string"
+  ],
+  answers: [
+  {
+  owner: {
+  reputation: 9497,
+  user_id: 6553328,
+  user_type: "registered",
+  profile_image: "https://i.stack.imgur.com/p9vHq.jpg?s=128&g=1",
+  display_name: "Emma",
+  link: "https://stackoverflow.com/users/6553328/emma"
+  },
+  up_vote_count: 0,
+  is_accepted: false,
+  score: 0,
+  last_activity_date: 1560557761,
+  last_edit_date: 1560557761,
+  answer_id: 56606307,
+  question_id: 56606261,
+  body_markdown: "&gt;It&#39;d be best to break/split our sentences first, prior to having it passed through an expression. Then, this expression might simply return only those lines (sentences) that do not have a URL, ^(?!.*https?[^\s]+.*).*$ Here, we&#39;d be defining a URL as `https?[^\s]+`. ###[Demo](https://regex101.com/r/z8misk/1/) ###Test import java.util.regex.Matcher; import java.util.regex.Pattern; final String regex = &quot;^(?!.*https?[^\\s]+.*).*$&quot;; final String string = &quot;Sorry, we are closed today. Visit our website tomorrow at https://www.google.com. Thank you and have a nice day!\n\n&quot; + &quot;Sorry, we are closed today. Visit our website tomorrow at. Thank you and have a nice day!\n\n&quot; + &quot;Sorry, we are closed today. Visit our website tomorrow at https://www.goog. Thank you and have a nice day!\n&quot;; final Pattern pattern = Pattern.compile(regex, Pattern.MULTILINE); final Matcher matcher = pattern.matcher(string); while (matcher.find()) { System.out.println(&quot;Full match: &quot; + matcher.group(0)); for (int i = 1; i &lt;= matcher.groupCount(); i++) { System.out.println(&quot;Group &quot; + i + &quot;: &quot; + matcher.group(i)); } } ### RegEx Circuit [jex.im](https://jex.im/regulex/#!flags=&amp;re=%5E(a%7Cb)*%3F%24) visualizes regular expressions: [![enter image description here][1]][1] [1]: https://i.stack.imgur.com/1WjKy.png",
+  body: "<blockquote> <p>It'd be best to break/split our sentences first, prior to having it passed through an expression. </p> </blockquote> <p>Then, this expression might simply return only those lines (sentences) that do not have a URL,</p> <pre><code>^(?!.*https?[^\s]+.*).*$ </code></pre> <p>Here, we'd be defining a URL as <code>https?[^\s]+</code>. </p> <h3><a href="https://regex101.com/r/z8misk/1/" rel="nofollow noreferrer">Demo</a></h3> <h3>Test</h3> <pre><code>import java.util.regex.Matcher; import java.util.regex.Pattern; final String regex = "^(?!.*https?[^\\s]+.*).*$"; final String string = "Sorry, we are closed today. Visit our website tomorrow at https://www.google.com. Thank you and have a nice day!\n\n" + "Sorry, we are closed today. Visit our website tomorrow at. Thank you and have a nice day!\n\n" + "Sorry, we are closed today. Visit our website tomorrow at https://www.goog. Thank you and have a nice day!\n"; final Pattern pattern = Pattern.compile(regex, Pattern.MULTILINE); final Matcher matcher = pattern.matcher(string); while (matcher.find()) { System.out.println("Full match: " + matcher.group(0)); for (int i = 1; i &lt;= matcher.groupCount(); i++) { System.out.println("Group " + i + ": " + matcher.group(i)); } } </code></pre> <h3>RegEx Circuit</h3> <p><a href="https://jex.im/regulex/#!flags=&amp;re=%5E(a%7Cb)*%3F%24" rel="nofollow noreferrer">jex.im</a> visualizes regular expressions:</p> <p><a href="https://i.stack.imgur.com/1WjKy.png" rel="nofollow noreferrer"><img src="https://i.stack.imgur.com/1WjKy.png" alt="enter image description here"></a></p> "
+  },
+  {
+  owner: {
+  reputation: 137978,
+  user_id: 240443,
+  user_type: "registered",
+  accept_rate: 79,
+  profile_image: "https://www.gravatar.com/avatar/495d675e3bc42ed1dee469e2ce701f1b?s=128&d=identicon&r=PG",
+  display_name: "Amadan",
+  link: "https://stackoverflow.com/users/240443/amadan"
+  },
+  up_vote_count: 0,
+  is_accepted: true,
+  score: 0,
+  last_activity_date: 1560557307,
+  last_edit_date: 1560557307,
+  answer_id: 56606308,
+  question_id: 56606261,
+  body_markdown: " &quot;(?&lt;=^|[?!.])[^?!.]+&quot; + urlRegex + &quot;.*?(?:$|[?!.])&quot; This will match each whole sentence whose part matches `urlRegex`, according to your definition of a sentence; you can use `replaceAll` to get rid of them. (There are many URL regexes around, and you didn&#39;t specify which one you were using, so I left the exact definition of URL to you.)",
+  body: "<pre><code>"(?&lt;=^|[?!.])[^?!.]+" + urlRegex + ".*?(?:$|[?!.])" </code></pre> <p>This will match each whole sentence whose part matches <code>urlRegex</code>, according to your definition of a sentence; you can use <code>replaceAll</code> to get rid of them. (There are many URL regexes around, and you didn't specify which one you were using, so I left the exact definition of URL to you.)</p> "
+  }
+  ],
+  is_answered: true,
+  view_count: 24,
+  accepted_answer_id: 56606308,
+  answer_count: 2,
+  score: 1,
+  last_activity_date: 1560557761,
+  creation_date: 1560556392,
+  last_edit_date: 1560556802,
+  question_id: 56606261,
+  body_markdown: "I am looking for a way to remove a sentence that contains a URL in Java. Note that I want to remove the entire sentence and not just the URL. I found a way to do this and it works, but I am looking for a simpler way to do this, maybe with just one RegEx? 1. Detect a sentence (can end with .?!) using BreakIterator : https://stackoverflow.com/questions/2687012/split-string-into-sentences 2. Use a Regex to read every line and detect the pattern : https://stackoverflow.com/questions/5713558/detect-and-extract-url-from-a-string. If found, just remove the sentence. ```BreakIterator iterator = BreakIterator.getSentenceInstance(Locale.US); String source = &quot;Sorry, we are closed today. Visit our website tomorrow at https://www.google.com. Thank you and have a nice day!&quot;; iterator.setText(source); int start = iterator.first(); int end = iterator.next(); while(end != BreakIterator.DONE){	if(SENT.matcher(source.substring(start,end)).find()) {	source = source.substring(0, start) + source.substring(end);	iterator.setText(source); start = iterator.first(); }else{ start = end; } end = iterator.next(); } System.out.println(source); This prints : Sorry, we are closed today. Thank you and have a nice day! ",
+  link: "https://stackoverflow.com/questions/56606261/strip-off-a-sentence-that-contains-a-url",
+  title: "Strip off a sentence that contains a URL",
+  body: "<p>I am looking for a way to remove a sentence that contains a URL in Java. Note that I want to remove the entire sentence and not just the URL.</p> <p>I found a way to do this and it works, but I am looking for a simpler way to do this, maybe with just one RegEx?</p> <ol> <li>Detect a sentence (can end with .?!) using BreakIterator : <a href="https://stackoverflow.com/questions/2687012/split-string-into-sentences">Split string into sentences</a></li> <li>Use a Regex to read every line and detect the pattern : <a href="https://stackoverflow.com/questions/5713558/detect-and-extract-url-from-a-string">Detect and extract url from a string?</a>. If found, just remove the sentence.</li> </ol> <pre><code>String source = "Sorry, we are closed today. Visit our website tomorrow at https://www.google.com. Thank you and have a nice day!"; iterator.setText(source); int start = iterator.first(); int end = iterator.next(); while(end != BreakIterator.DONE){ if(SENT.matcher(source.substring(start,end)).find()) { source = source.substring(0, start) + source.substring(end); iterator.setText(source); start = iterator.first(); }else{ start = end; } end = iterator.next(); } System.out.println(source); This prints : Sorry, we are closed today. Thank you and have a nice day! </code></pre> "
+  },
+  {
+  tags: [
+  "javascript",
+  "node.js",
+  "ecmascript-6",
+  "promise"
+  ],
+  answers: [
+  {
+  owner: {
+  reputation: 25477,
+  user_id: 10221765,
+  user_type: "registered",
+  profile_image: "https://www.gravatar.com/avatar/0e762fef8d87381d5cbd58d851d1b816?s=128&d=identicon&r=PG&f=1",
+  display_name: "Jack Bashford",
+  link: "https://stackoverflow.com/users/10221765/jack-bashford"
+  },
+  up_vote_count: 3,
+  is_accepted: true,
+  score: 3,
+  last_activity_date: 1560556955,
+  last_edit_date: 1560556955,
+  answer_id: 56606245,
+  question_id: 56606205,
+  body_markdown: "The `function(doSomething)` runs when the previous promise completes successfully, and `doSomething` is the response. You can chain the promises using `then` like: query(&quot;SELECT * FROM books where book_id = $1&quot;) .then(() =&gt; query(&quot;SELECT * FROM username where username = $2&quot;)) .then(() =&gt; query(&quot;SELECT * FROM saved where saved_id = $3&quot;)); This will execute the three SQL queries in sequence. However, since you&#39;ll most likely want to save the response, you could use `async/await` for simplicity: async function threeQueries() { //Fetch all three queries in sequence let queryOne = await query(&quot;SELECT * FROM books where book_id = $1&quot;); let queryTwo = await query(&quot;SELECT * FROM username where username = $2&quot;); let queryThree = await query(&quot;SELECT * FROM saved where saved_id = $3&quot;); //Extract the response text from our queries let resultOne = await queryOne.text(); let resultTwo = await queryTwo.text(); let resultThree = await queryThree.text(); //Return the responses from the function return [resultOne, resultTwo, resultThree]; } You could also use `Promise.all` like so: Promise.all([ query(&quot;SELECT * FROM books where book_id = $1&quot;), query(&quot;SELECT * FROM username where username = $2&quot;), query(&quot;SELECT * FROM saved where saved_id = $3&quot;) ]);",
+  body: "<p>The <code>function(doSomething)</code> runs when the previous promise completes successfully, and <code>doSomething</code> is the response. You can chain the promises using <code>then</code> like:</p> <pre><code>query("SELECT * FROM books where book_id = $1") .then(() =&gt; query("SELECT * FROM username where username = $2")) .then(() =&gt; query("SELECT * FROM saved where saved_id = $3")); </code></pre> <p>This will execute the three SQL queries in sequence. </p> <p>However, since you'll most likely want to save the response, you could use <code>async/await</code> for simplicity:</p> <pre><code>async function threeQueries() { //Fetch all three queries in sequence let queryOne = await query("SELECT * FROM books where book_id = $1"); let queryTwo = await query("SELECT * FROM username where username = $2"); let queryThree = await query("SELECT * FROM saved where saved_id = $3"); //Extract the response text from our queries let resultOne = await queryOne.text(); let resultTwo = await queryTwo.text(); let resultThree = await queryThree.text(); //Return the responses from the function return [resultOne, resultTwo, resultThree]; } </code></pre> <p>You could also use <code>Promise.all</code> like so:</p> <pre><code>Promise.all([ query("SELECT * FROM books where book_id = $1"), query("SELECT * FROM username where username = $2"), query("SELECT * FROM saved where saved_id = $3") ]); </code></pre> "
+  },
+  {
+  owner: {
+  reputation: 493,
+  user_id: 5027899,
+  user_type: "registered",
+  profile_image: "https://i.stack.imgur.com/jzcNe.jpg?s=128&g=1",
+  display_name: "Fatih Aktaş",
+  link: "https://stackoverflow.com/users/5027899/fatih-akta%c5%9f"
+  },
+  up_vote_count: 1,
+  is_accepted: false,
+  score: 1,
+  last_activity_date: 1560556839,
+  answer_id: 56606297,
+  question_id: 56606205,
+  body_markdown: "We use promises which are objects that may produce a single value some time in the future. As you run ```query(&quot;query string&quot;)```, it will return a Promise object asynchronously. Meaning, your app is not going to wait for the query to finish. It is going to start the query process and move on to the next line of code. **So, how do we handle the query when it is done?** We use ```then``` to process the information that the query returns. ```then``` will get triggered when the query successfully completed its process.",
+  body: "<p>We use promises which are objects that may produce a single value some time in the future.</p> <p>As you run <code>query("query string")</code>, it will return a Promise object asynchronously. Meaning, your app is not going to wait for the query to finish. It is going to start the query process and move on to the next line of code.</p> <p><strong>So, how do we handle the query when it is done?</strong></p> <p>We use <code>then</code> to process the information that the query returns. <code>then</code> will get triggered when the query successfully completed its process.</p> "
+  },
+  {
+  owner: {
+  reputation: 41,
+  user_id: 5220264,
+  user_type: "registered",
+  profile_image: "https://www.gravatar.com/avatar/fd0dcb4038b79d35214702183846cd8b?s=128&d=identicon&r=PG&f=1",
+  display_name: "Dave",
+  link: "https://stackoverflow.com/users/5220264/dave"
+  },
+  up_vote_count: 4,
+  is_accepted: false,
+  score: 4,
+  last_activity_date: 1560557549,
+  answer_id: 56606354,
+  question_id: 56606205,
+  body_markdown: "The purpose of Promises is to enable better flow control of asynchronous operations. Use Promise.all for cases where you have multiple tasks that must complete, in any order, before code flow can proceed. Use Promise.then when you have multiple async tasks where each step may partially depend on the result of a previous (e.g. after querying your books table you query the username table using books.savedByUserId to fetch the appropriate user record). Referencing some examples from: https://codeburst.io/node-js-mysql-and-promises-4c3be599909b The author provides a simple mySql wrapper that returns Promises (database.query returns new Promise). //In this example Promise.all executes the queries independently, but provides an //effective tool to resume your work after all are completed. The order in which //they complete may be random/indeterminate. var bookQuery = database.query( &#39;SELECT * FROM books where book_id = $1&#39; ); var userQuery = database.query( &#39;SELECT * FROM username where username = $2&#39; ); var saveQuery = database.query( &#39;SELECT * FROM saved where saved_id = $3&#39; ); Promise.all([bookQuery,userQuery,saveQuery]).then(function(results){ //resume whatever processing that should happen afterwards //For instance, perhaps form fields in your UI require these datasets to be loaded //before displaying the UI. myDialog.open() }); // In this example, things are done sequentially, this makes the most sense // when the result of each operation feeds into the next. Since your queries don&#39;t // rely on each other, this is not ideally depicted. let bookRows, userRows, savedRows ; database.query( &#39;SELECT * FROM books where book_id = $1&#39; ) .then( rows =&gt; { bookRows = rows; return database.query( &#39;SELECT * FROM username where username = $2&#39; ); }) .then( rows =&gt; { userRows = rows; return database.query( &#39;SELECT * FROM saved where saved_id = $3&#39; ); }) .then( rows =&gt; { savedRows = rows; return database.close(); }) .then( () =&gt; { // do something with bookRows, userRows, savedRows } .catch( err =&gt; { // handle the error }) p.s. Not to muddy the waters, but in this case three sequential sql queries could likely be replaced by a single query with joins, but I guess that&#39;s not really the point of the question. Let&#39;s pretend it&#39;s three queries to separate stores, that&#39;d make sense.",
+  body: "<p>The purpose of Promises is to enable better flow control of asynchronous operations. Use Promise.all for cases where you have multiple tasks that must complete, in any order, before code flow can proceed. Use Promise.then when you have multiple async tasks where each step may partially depend on the result of a previous (e.g. after querying your books table you query the username table using books.savedByUserId to fetch the appropriate user record).</p> <p>Referencing some examples from: <a href="https://codeburst.io/node-js-mysql-and-promises-4c3be599909b" rel="nofollow noreferrer">https://codeburst.io/node-js-mysql-and-promises-4c3be599909b</a> The author provides a simple mySql wrapper that returns Promises (database.query returns new Promise).</p> <pre><code>//In this example Promise.all executes the queries independently, but provides an //effective tool to resume your work after all are completed. The order in which //they complete may be random/indeterminate. var bookQuery = database.query( 'SELECT * FROM books where book_id = $1' ); var userQuery = database.query( 'SELECT * FROM username where username = $2' ); var saveQuery = database.query( 'SELECT * FROM saved where saved_id = $3' ); Promise.all([bookQuery,userQuery,saveQuery]).then(function(results){ //resume whatever processing that should happen afterwards //For instance, perhaps form fields in your UI require these datasets to be loaded //before displaying the UI. myDialog.open() }); // In this example, things are done sequentially, this makes the most sense // when the result of each operation feeds into the next. Since your queries don't // rely on each other, this is not ideally depicted. let bookRows, userRows, savedRows ; database.query( 'SELECT * FROM books where book_id = $1' ) .then( rows =&gt; { bookRows = rows; return database.query( 'SELECT * FROM username where username = $2' ); }) .then( rows =&gt; { userRows = rows; return database.query( 'SELECT * FROM saved where saved_id = $3' ); }) .then( rows =&gt; { savedRows = rows; return database.close(); }) .then( () =&gt; { // do something with bookRows, userRows, savedRows } .catch( err =&gt; { // handle the error }) </code></pre> <p>p.s. Not to muddy the waters, but in this case three sequential sql queries could likely be replaced by a single query with joins, but I guess that's not really the point of the question. Let's pretend it's three queries to separate stores, that'd make sense.</p> "
+  }
+  ],
+  is_answered: true,
+  view_count: 34,
+  accepted_answer_id: 56606245,
+  answer_count: 3,
+  score: 5,
+  last_activity_date: 1560557549,
+  creation_date: 1560555616,
+  last_edit_date: 1560556160,
+  question_id: 56606205,
+  body_markdown: "I just can&#39;t seem to wrap my head around chaining queries with promises. What&#39;s confusing me the most is the .then(function(doSomething) part. What am I supposed to put in the function(doSomething)? And what does it do? Could someone chain these queries for me without using Promise.all but instead using .then()? So I can learn from this SELECT * FROM books where book_id = $1 SELECT * FROM username where username = $2 SELECT * FROM saved where saved_id = $3",
+  link: "https://stackoverflow.com/questions/56606205/confused-on-how-to-chain-queries-using-promises-using-then",
+  title: "Confused on how to chain queries using promises using .then()",
+  body: "<p>I just can't seem to wrap my head around chaining queries with promises. What's confusing me the most is the .then(function(doSomething) part.</p> <p>What am I supposed to put in the function(doSomething)? And what does it do?</p> <p>Could someone chain these queries for me without using Promise.all but instead using .then()? So I can learn from this</p> <pre><code>SELECT * FROM books where book_id = $1 SELECT * FROM username where username = $2 SELECT * FROM saved where saved_id = $3 </code></pre> "
+  },
+  {
+  tags: [
+  "r"
+  ],
+  answers: [
+  {
+  owner: {
+  reputation: 109,
+  user_id: 9284464,
+  user_type: "registered",
+  profile_image: "https://www.gravatar.com/avatar/abd47b6c9ce4aa737add3b476da53df1?s=128&d=identicon&r=PG&f=1",
+  display_name: "SweepingsDemon",
+  link: "https://stackoverflow.com/users/9284464/sweepingsdemon"
+  },
+  up_vote_count: 1,
+  is_accepted: false,
+  score: 1,
+  last_activity_date: 1560555190,
+  answer_id: 56606170,
+  question_id: 56606102,
+  body_markdown: "Why are you looping? Furthermore, why are you changing a single variable and then trying to bind it like a vector? A much easier way to do this is to just add a column, i.e. `df$percentage &lt;- df$number/sum(df$number)*100`",
+  body: "<p>Why are you looping? Furthermore, why are you changing a single variable and then trying to bind it like a vector?</p> <p>A much easier way to do this is to just add a column, i.e. <code>df$percentage &lt;- df$number/sum(df$number)*100</code></p> "
+  },
+  {
+  owner: {
+  reputation: 331,
+  user_id: 11593992,
+  user_type: "registered",
+  profile_image: "https://i.stack.imgur.com/8kQT3.png?s=128&g=1",
+  display_name: "Jason Mathews",
+  link: "https://stackoverflow.com/users/11593992/jason-mathews"
+  },
+  up_vote_count: 1,
+  is_accepted: true,
+  score: 1,
+  last_activity_date: 1560557060,
+  last_edit_date: 1560557060,
+  answer_id: 56606287,
+  question_id: 56606102,
+  body_markdown: "As mentioned in the comments, below is the solution. library(dplyr) df %&gt;% mutate(Percentage = number/sum(number)) Output: name number Percentage 1 asdad 5 0.25 2 dssdd 5 0.25 3 assa 10 0.50",
+  body: "<p>As mentioned in the comments, below is the solution. </p> <pre><code>library(dplyr) df %&gt;% mutate(Percentage = number/sum(number)) Output: name number Percentage 1 asdad 5 0.25 2 dssdd 5 0.25 3 assa 10 0.50 </code></pre> "
+  }
+  ],
+  is_answered: true,
+  view_count: 17,
+  accepted_answer_id: 56606287,
+  answer_count: 2,
+  score: 0,
+  last_activity_date: 1560557060,
+  creation_date: 1560554450,
+  last_edit_date: 1560557038,
+  question_id: 56606102,
+  body_markdown: "I have the dataframe below and I would like to add a new column with the percentage of every value of this dataframe. Something like: name &lt;- c(&quot;asdad&quot;,&quot;dssdd&quot;) number &lt;- c(5,5) df &lt;- data.frame(name,number) for (i in 1:nrow(df)) { percentage&lt;-df[i,1]/sum(df$number) } new &lt;- cbind(df, percentage) but I get NAs instead of percentages.",
+  link: "https://stackoverflow.com/questions/56606102/add-a-new-column-to-a-dataframe-with-the-percentage-of-every-value-of-this-dataf",
+  title: "Add a new column to a dataframe with the percentage of every value of this dataframe",
+  body: "<p>I have the dataframe below and I would like to add a new column with the percentage of every value of this dataframe. Something like:</p> <pre><code>name &lt;- c("asdad","dssdd") number &lt;- c(5,5) df &lt;- data.frame(name,number) for (i in 1:nrow(df)) { percentage&lt;-df[i,1]/sum(df$number) } new &lt;- cbind(df, percentage) </code></pre> <p>but I get NAs instead of percentages.</p> "
+  },
+  {
+  tags: [
+  "python",
+  "python-3.x",
+  "beautifulsoup"
+  ],
+  answers: [
+  {
+  owner: {
+  reputation: 1258,
+  user_id: 7652544,
+  user_type: "registered",
+  accept_rate: 83,
+  profile_image: "https://i.stack.imgur.com/OimTH.png?s=128&g=1",
+  display_name: "Sebastien D",
+  link: "https://stackoverflow.com/users/7652544/sebastien-d"
+  },
+  up_vote_count: 0,
+  is_accepted: false,
+  score: 0,
+  last_activity_date: 1560555584,
+  last_edit_date: 1560555584,
+  answer_id: 56606145,
+  question_id: 56606048,
+  body_markdown: "Not sure if it&#39;s right but why not doing so? You can chain `find`to get to the desired sub div: html= &quot;&quot;&quot; &lt;div class=&quot;block-content&quot;&gt; &lt;div class=&quot;label-item-description&quot;&gt; &lt;div&gt; &lt;a href=&quot;/label/example.com&quot;&gt;&lt;strong&gt;Example&lt;/strong&gt;&lt;/a&gt; &lt;/div&gt; &lt;small&gt; &lt;i class=&quot;fa fa-facebook-official&quot;&gt;&lt;/i&gt; 342.4K &lt;i class=&quot;fa fa-soundcloud&quot;&gt;&lt;/i&gt; 233.4K &lt;/small&gt; &lt;br /&gt; &lt;small class=&quot;text-muted&quot;&gt; Stockholm, Sweden &lt;/small&gt; &lt;br /&gt; &lt;small class=&quot;text-muted&quot;&gt; &lt;b&gt;Techno, Tech House&lt;/b&gt; &lt;/small&gt; &lt;/div&gt;, &lt;div class=&quot;label-item-description&quot;&gt;&lt;/div&gt; &lt;/div&gt;	&quot;&quot;&quot; soup=BeautifulSoup(html) print(soup.find(&#39;div&#39;, {&#39;class&#39;: &#39;block-content&#39;}).find(&#39;div&#39;, {&#39;class&#39;:&quot;label-item-description&quot;}).find(&#39;a&#39;)) output: &lt;a href=&quot;/label/example.com&quot;&gt;&lt;strong&gt;Example&lt;/strong&gt;&lt;/a&gt;",
+  body: "<p>Not sure if it's right but why not doing so? You can chain <code>find</code>to get to the desired sub div:</p> <pre><code>html= """ &lt;div class="block-content"&gt; &lt;div class="label-item-description"&gt; &lt;div&gt; &lt;a href="/label/example.com"&gt;&lt;strong&gt;Example&lt;/strong&gt;&lt;/a&gt; &lt;/div&gt; &lt;small&gt; &lt;i class="fa fa-facebook-official"&gt;&lt;/i&gt; 342.4K &lt;i class="fa fa-soundcloud"&gt;&lt;/i&gt; 233.4K &lt;/small&gt; &lt;br /&gt; &lt;small class="text-muted"&gt; Stockholm, Sweden &lt;/small&gt; &lt;br /&gt; &lt;small class="text-muted"&gt; &lt;b&gt;Techno, Tech House&lt;/b&gt; &lt;/small&gt; &lt;/div&gt;, &lt;div class="label-item-description"&gt;&lt;/div&gt; &lt;/div&gt; """ soup=BeautifulSoup(html) print(soup.find('div', {'class': 'block-content'}).find('div', {'class':"label-item-description"}).find('a')) </code></pre> <p>output:</p> <pre><code>&lt;a href="/label/example.com"&gt;&lt;strong&gt;Example&lt;/strong&gt;&lt;/a&gt; </code></pre> "
+  },
+  {
+  owner: {
+  reputation: 1139,
+  user_id: 274030,
+  user_type: "registered",
+  profile_image: "https://www.gravatar.com/avatar/8fd910b4f7c7baabc22976dc6b29b744?s=128&d=identicon&r=PG",
+  display_name: "Everett",
+  link: "https://stackoverflow.com/users/274030/everett"
+  },
+  up_vote_count: 1,
+  is_accepted: true,
+  score: 1,
+  last_activity_date: 1560555683,
+  answer_id: 56606214,
+  question_id: 56606048,
+  body_markdown: "You may want to give the CSS selectors a try -- I found them to be more familiar and importantly, I found them to cause fewer `AttributeError` problems. For example, using the above `html` you can select the first anchor tag like this: link = soup.select(&quot;div.label-item-description &gt; div &gt; a&quot;) print(link[0]) # &lt;a href=&quot;/label/example.com&quot;&gt;&lt;strong&gt;Example&lt;/strong&gt;&lt;/a&gt; See the docs: https://www.crummy.com/software/BeautifulSoup/bs4/doc/#css-selectors ",
+  body: "<p>You may want to give the CSS selectors a try -- I found them to be more familiar and importantly, I found them to cause fewer <code>AttributeError</code> problems. </p> <p>For example, using the above <code>html</code> you can select the first anchor tag like this:</p> <pre><code>link = soup.select("div.label-item-description &gt; div &gt; a") print(link[0]) # &lt;a href="/label/example.com"&gt;&lt;strong&gt;Example&lt;/strong&gt;&lt;/a&gt; </code></pre> <p>See the docs:</p> <p><a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/#css-selectors" rel="nofollow noreferrer">https://www.crummy.com/software/BeautifulSoup/bs4/doc/#css-selectors</a></p> "
+  }
+  ],
+  is_answered: true,
+  view_count: 19,
+  accepted_answer_id: 56606214,
+  answer_count: 2,
+  score: 0,
+  last_activity_date: 1560555683,
+  creation_date: 1560553780,
+  last_edit_date: 1560554829,
+  question_id: 56606048,
+  body_markdown: "I am trying to drill down two levels in this Python script. All the examples I see drill down a single level using find_all, and I can get that working fine, but I&#39;m not able to get down to the third level. Here is my code snippet: main_table = soup.find(&quot;div&quot;,attrs={&#39;class&#39;:&#39;block-content&#39;}) label_item_contents = main_table.find_all(&quot;div&quot;, attrs={&#39;class&#39;:&#39;label-item-description&#39;}) links = label_item_contents.find_all(&quot;a&quot;) print(links) Doing this gives me the error &quot;AttributeError: ResultSet object has no attribute &#39;find_all&#39;.&quot; If I comment out and change the print so it&#39;s this: main_table = soup.find(&quot;div&quot;,attrs={&#39;class&#39;:&#39;block-content&#39;}) label_item_contents = main_table.find_all(&quot;div&quot;, attrs={&#39;class&#39;:&#39;label-item-description&#39;}) print(label_item_contents) Then I see all the scraped data. I read that the issue could be that label_item_contents becomes an array, so I tried to do this: links = label_item_contents[].find_all(&quot;a&quot;) But then I get &quot;SyntaxError: invalid syntax&quot; Any help is appreciated! EDIT: Here is a portion of the HTML that is returned in the second example when I use print(label_item_contents): &lt;div class=&quot;label-item-description&quot;&gt; &lt;div&gt; &lt;a href=&quot;/label/example.com&quot;&gt;&lt;strong&gt;Example&lt;/strong&gt;&lt;/a&gt; &lt;/div&gt; &lt;small&gt; &lt;i class=&quot;fa fa-facebook-official&quot;&gt;&lt;/i&gt; 342.4K &lt;i class=&quot;fa fa-soundcloud&quot;&gt;&lt;/i&gt; 233.4K &lt;/small&gt; &lt;br /&gt; &lt;small class=&quot;text-muted&quot;&gt; Stockholm, Sweden &lt;/small&gt; &lt;br /&gt; &lt;small class=&quot;text-muted&quot;&gt; &lt;b&gt;Techno, Tech House&lt;/b&gt; &lt;/small&gt; &lt;/div&gt;, &lt;div class=&quot;label-item-description&quot;&gt; I am trying to only get to `&lt;a href=&quot;/label/example.com&quot;&gt;`",
+  link: "https://stackoverflow.com/questions/56606048/how-do-i-dive-down-multiple-levels-in-beautiful-soup-find-all-error",
+  title: "How do I dive down multiple levels in Beautiful Soup (find_all error)",
+  body: "<p>I am trying to drill down two levels in this Python script. All the examples I see drill down a single level using find_all, and I can get that working fine, but I'm not able to get down to the third level. Here is my code snippet:</p> <pre><code>main_table = soup.find("div",attrs={'class':'block-content'}) label_item_contents = main_table.find_all("div", attrs={'class':'label-item-description'}) links = label_item_contents.find_all("a") print(links) </code></pre> <p>Doing this gives me the error "AttributeError: ResultSet object has no attribute 'find_all'."</p> <p>If I comment out and change the print so it's this:</p> <pre><code>main_table = soup.find("div",attrs={'class':'block-content'}) label_item_contents = main_table.find_all("div", attrs={'class':'label-item-description'}) print(label_item_contents) </code></pre> <p>Then I see all the scraped data. I read that the issue could be that label_item_contents becomes an array, so I tried to do this:</p> <pre><code>links = label_item_contents[].find_all("a") </code></pre> <p>But then I get "SyntaxError: invalid syntax" </p> <p>Any help is appreciated!</p> <p>EDIT: Here is a portion of the HTML that is returned in the second example when I use print(label_item_contents):</p> <pre><code>&lt;div class="label-item-description"&gt; &lt;div&gt; &lt;a href="/label/example.com"&gt;&lt;strong&gt;Example&lt;/strong&gt;&lt;/a&gt; &lt;/div&gt; &lt;small&gt; &lt;i class="fa fa-facebook-official"&gt;&lt;/i&gt; 342.4K &lt;i class="fa fa-soundcloud"&gt;&lt;/i&gt; 233.4K &lt;/small&gt; &lt;br /&gt; &lt;small class="text-muted"&gt; Stockholm, Sweden &lt;/small&gt; &lt;br /&gt; &lt;small class="text-muted"&gt; &lt;b&gt;Techno, Tech House&lt;/b&gt; &lt;/small&gt; &lt;/div&gt;, &lt;div class="label-item-description"&gt; </code></pre> <p>I am trying to only get to <code>&lt;a href="/label/example.com"&gt;</code></p> "
+  },
+  {
+  tags: [
+  "r",
+  "plot"
+  ],
+  answers: [
+  {
+  owner: {
+  reputation: 19931,
+  user_id: 4341440,
+  user_type: "registered",
+  accept_rate: 100,
+  profile_image: "https://i.stack.imgur.com/ZZqXN.png?s=128&g=1",
+  display_name: "Axeman",
+  link: "https://stackoverflow.com/users/4341440/axeman"
+  },
+  up_vote_count: 1,
+  is_accepted: false,
+  score: 1,
+  last_activity_date: 1560554636,
+  answer_id: 56606118,
+  question_id: 56606039,
+  body_markdown: " diag_custom_labels &lt;- function(x, y, labels, cex, font, ...) { if (!exists(&#39;i&#39;)) i &lt;&lt;- 1 text(mean(x), mean(y), c(&#39;my&#39;, &#39;custom&#39;, &#39;diag&#39;, &#39;labels&#39;)[[i]], cex = cex) i &lt;&lt;- i + 1 } pairs(iris[1:4], main = &quot;Predicting Iris Class&quot;, lower.panel=lower_panel_r_squared, upper.panel = upper_panel_regression_line, text.panel = diag_custom_labels, col=c(&quot;red&quot;,&quot;blue&quot;,&quot;green&quot;) [class_to_number]) [![enter image description here][1]][1] [1]: https://i.stack.imgur.com/BNUix.png",
+  body: "<pre><code>diag_custom_labels &lt;- function(x, y, labels, cex, font, ...) { if (!exists('i')) i &lt;&lt;- 1 text(mean(x), mean(y), c('my', 'custom', 'diag', 'labels')[[i]], cex = cex) i &lt;&lt;- i + 1 } pairs(iris[1:4], main = "Predicting Iris Class", lower.panel=lower_panel_r_squared, upper.panel = upper_panel_regression_line, text.panel = diag_custom_labels, col=c("red","blue","green") [class_to_number]) </code></pre> <p><a href="https://i.stack.imgur.com/BNUix.png" rel="nofollow noreferrer"><img src="https://i.stack.imgur.com/BNUix.png" alt="enter image description here"></a></p> "
+  },
+  {
+  owner: {
+  reputation: 30067,
+  user_id: 3358272,
+  user_type: "registered",
+  accept_rate: 94,
+  profile_image: "https://i.stack.imgur.com/gteVQ.jpg?s=128&g=1",
+  display_name: "r2evans",
+  link: "https://stackoverflow.com/users/3358272/r2evans"
+  },
+  up_vote_count: 1,
+  is_accepted: true,
+  score: 1,
+  last_activity_date: 1560556844,
+  last_edit_date: 1560556844,
+  answer_id: 56606189,
+  question_id: 56606039,
+  body_markdown: "This is pretty close to @Axeman, but I thought a more programmatic way of assigning new labels would help. First, as always, you can just change the column names of the data going in, with `colnames` or `setNames` or just `names`. I&#39;m assuming this is not the solution you want. Using the `text.panel=` argument is a little troublesome in that it must be pre-defined to &quot;know&quot; what the labels should be, either by comparing with the old labels or by knowing the position. Instead of trying to be uber fancy, I suggest a slight-fancy way of doing it. As you can see in @Axeman&#39;s answer (and in the documentation for `?pairs`), normally `text.panel=` and other arguments take a function, but no arguments to that function are user-controllable, so we&#39;ll define a function that takes first the new labels to use, then returns a function that is handed to `pairs`. ```lang-r my.text.panel &lt;- function(labels) { function(x, y, lbl, ...) { if (lbl %in% names(labels)) lbl &lt;- labels[[lbl]] text(x, y, lbl, ...) } } pairs(iris[1:4], main = &quot;Predicting Iris Class&quot;, text.panel = my.text.panel(c(Sepal.Length=&quot;Slen&quot;, Sepal.Width=&quot;Swid&quot;, Petal.Length=&quot;Plen&quot;, Petal.Width=&quot;Pwid&quot;)), lower.panel = lower_panel_r_squared, upper.panel = upper_panel_regression_line, col=c(&quot;red&quot;,&quot;blue&quot;,&quot;green&quot;) [class_to_number]) ``` With this function, you can specify all, some, or none of the labels; the default here is to use the previous label if a new mapping is not found, but that could easily be extended in the function to control other methods. The result: [![updated pairs plot, new diagonal labels][1]][1] I originally kept the `mean(x)` and such from @Axeman&#39;s answer, but since the otherwise default behavior (using an internally-defined function named `textPanel`) seems to expect single numbers and not vectors, I believe `mean` is unnecessary (though not problematic). [1]: https://i.stack.imgur.com/9OcxC.png",
+  body: "<p>This is pretty close to @Axeman, but I thought a more programmatic way of assigning new labels would help.</p> <p>First, as always, you can just change the column names of the data going in, with <code>colnames</code> or <code>setNames</code> or just <code>names</code>. I'm assuming this is not the solution you want.</p> <p>Using the <code>text.panel=</code> argument is a little troublesome in that it must be pre-defined to "know" what the labels should be, either by comparing with the old labels or by knowing the position. Instead of trying to be uber fancy, I suggest a slight-fancy way of doing it.</p> <p>As you can see in @Axeman's answer (and in the documentation for <code>?pairs</code>), normally <code>text.panel=</code> and other arguments take a function, but no arguments to that function are user-controllable, so we'll define a function that takes first the new labels to use, then returns a function that is handed to <code>pairs</code>.</p> <pre class="lang-r prettyprint-override"><code>my.text.panel &lt;- function(labels) { function(x, y, lbl, ...) { if (lbl %in% names(labels)) lbl &lt;- labels[[lbl]] text(x, y, lbl, ...) } } pairs(iris[1:4], main = "Predicting Iris Class", text.panel = my.text.panel(c(Sepal.Length="Slen", Sepal.Width="Swid", Petal.Length="Plen", Petal.Width="Pwid")), lower.panel = lower_panel_r_squared, upper.panel = upper_panel_regression_line, col=c("red","blue","green") [class_to_number]) </code></pre> <p>With this function, you can specify all, some, or none of the labels; the default here is to use the previous label if a new mapping is not found, but that could easily be extended in the function to control other methods.</p> <p>The result:</p> <p><a href="https://i.stack.imgur.com/9OcxC.png" rel="nofollow noreferrer"><img src="https://i.stack.imgur.com/9OcxC.png" alt="updated pairs plot, new diagonal labels"></a></p> <p>I originally kept the <code>mean(x)</code> and such from @Axeman's answer, but since the otherwise default behavior (using an internally-defined function named <code>textPanel</code>) seems to expect single numbers and not vectors, I believe <code>mean</code> is unnecessary (though not problematic).</p> "
+  }
+  ],
+  is_answered: true,
+  view_count: 15,
+  accepted_answer_id: 56606189,
+  answer_count: 2,
+  score: 0,
+  last_activity_date: 1560556844,
+  creation_date: 1560553718,
+  last_edit_date: 1560553982,
+  question_id: 56606039,
+  body_markdown: "I want to change the text on the diagonals produced by the following code in R (I want to change the text showing Sepal.Length, Sepal.Width, Petal.Length and Petal.Width). ![Graph produced by the code below][1] I&#39;ve tried inserting something for the diag.panel argument in the &quot;pairs&quot; function, but have had no luck with that. #Extracts the iris species column from the iris dataset iris_class = iris$Species #Change the class from characters to numerical values for indexing # #1 = Iris-setosa # #2 = Iris-versicolor # #3 = Iris-virginica class_to_number = as.numeric(factor(iris_class)) #A function to show the linear regression line in each graph upper_panel_regression_line = function(x,y, ...){ points(x,y,...) linear_regression = lm(y~x) linear_regression_line = abline(linear_regression) } #A function to calculate and show the R-squared value of each panel lower_panel_r_squared = function(x, y, ...){ usr &lt;- par(&quot;usr&quot;); on.exit(par(usr)) par(usr = c(0, 2, 0, 2)) r = cor(x, y) r_squared = round(r^2, digits = 2) text_of_r_squared = paste0(&quot;R-squared = &quot;, r_squared) text(1, 1, text_of_r_squared) } pairs(iris[1:4], main = &quot;Predicting Iris Class&quot;, lower.panel=lower_panel_r_squared, upper.panel = upper_panel_regression_line, col=c(&quot;red&quot;,&quot;blue&quot;,&quot;green&quot;) [class_to_number]) [1]: https://i.stack.imgur.com/bgkNR.png",
+  link: "https://stackoverflow.com/questions/56606039/how-can-i-change-the-text-on-the-diagonals-of-the-scatter-plots-produced-by-the",
+  title: "How can I change the text on the diagonals of the scatter plots produced by the &quot;pairs&quot; function?",
+  body: "<p>I want to change the text on the diagonals produced by the following code in R (I want to change the text showing Sepal.Length, Sepal.Width, Petal.Length and Petal.Width).</p> <p><img src="https://i.stack.imgur.com/bgkNR.png" alt="Graph produced by the code below"></p> <p>I've tried inserting something for the diag.panel argument in the "pairs" function, but have had no luck with that.</p> <pre><code>#Extracts the iris species column from the iris dataset iris_class = iris$Species #Change the class from characters to numerical values for indexing # #1 = Iris-setosa # #2 = Iris-versicolor # #3 = Iris-virginica class_to_number = as.numeric(factor(iris_class)) #A function to show the linear regression line in each graph upper_panel_regression_line = function(x,y, ...){ points(x,y,...) linear_regression = lm(y~x) linear_regression_line = abline(linear_regression) } #A function to calculate and show the R-squared value of each panel lower_panel_r_squared = function(x, y, ...){ usr &lt;- par("usr"); on.exit(par(usr)) par(usr = c(0, 2, 0, 2)) r = cor(x, y) r_squared = round(r^2, digits = 2) text_of_r_squared = paste0("R-squared = ", r_squared) text(1, 1, text_of_r_squared) } pairs(iris[1:4], main = "Predicting Iris Class", lower.panel=lower_panel_r_squared, upper.panel = upper_panel_regression_line, col=c("red","blue","green") [class_to_number]) </code></pre> "
+  }
+  ],
+  has_more: true,
+  quota_max: 300,
+  quota_remaining: 196
+  }
